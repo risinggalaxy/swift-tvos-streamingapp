@@ -13,9 +13,12 @@ struct MainView: View, MainViewInterface {
     @ObservedObject var mainViewModel: MainViewModel
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(mainViewModel.categories, id: \.self) { category in
+                
+            }
+        }
     }
-    
 }
 
 struct MainView_Previews: PreviewProvider {

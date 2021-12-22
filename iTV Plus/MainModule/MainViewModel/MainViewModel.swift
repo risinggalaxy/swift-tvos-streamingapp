@@ -10,7 +10,12 @@ import SwiftUI
 
 class MainViewModel: ObservableObject, MainViewModelInterface {
     
-    let objectWillChange = ObservableObjectPublisher()
+    let objectWillChange: ObservableObjectPublisher = ObservableObjectPublisher()
     
+    @Published var categories: [Categories] = [] {
+        didSet {
+            self.objectWillChange.send()
+        }
+    }
     
 }

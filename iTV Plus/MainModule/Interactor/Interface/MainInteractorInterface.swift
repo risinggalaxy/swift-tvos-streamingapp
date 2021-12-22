@@ -9,4 +9,6 @@ import Foundation
 
 protocol MainInteractorInterface {
     var presenter: MainPresenterInterface? { get set }
+    var categories: [Categories]! { get set }
+    func loadJSON<T: Codable>( _ data: Data) throws -> T
 }

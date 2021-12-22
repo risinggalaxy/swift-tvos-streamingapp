@@ -7,14 +7,9 @@
 
 import Foundation
 
-struct AllListInfo: Codable, Identifiable {
-    let id: Int
-    let categories: [Categories]
-}
-
-struct Categories: Codable, Identifiable {
+struct Categories: Codable, Hashable, Identifiable {
     let id: Int
     let title: String
-    let image: Data?
+    let image: String
     let channels: [Channels]
 }

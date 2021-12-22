@@ -9,4 +9,7 @@ import Foundation
 import SwiftUI
 
 protocol MainViewModelInterface {
+    
+    var categories: [Categories] { get set }
+    
 }

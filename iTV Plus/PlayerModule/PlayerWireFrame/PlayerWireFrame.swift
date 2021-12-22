@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 class PlayerWireFrame: PlayerWireFrameInterface {
-    
     static func presentViewController() -> VIEW {
         let viewModel = PlayerViewModel()
         let presenter = PlayerPresenter()

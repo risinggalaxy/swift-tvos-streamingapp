@@ -46,17 +46,27 @@
 		736D64F127733C5400E61A9D /* PlayerWireFrameInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64F027733C5400E61A9D /* PlayerWireFrameInterface.swift */; };
 		736D64F327733C5F00E61A9D /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64F227733C5F00E61A9D /* PlayerViewModel.swift */; };
 		736D64F527733C6C00E61A9D /* PlayerVieModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64F427733C6C00E61A9D /* PlayerVieModelInterface.swift */; };
+		736D64F72773413F00E61A9D /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64F62773413F00E61A9D /* MockURLSession.swift */; };
+		736D64F9277355B400E61A9D /* MockImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64F8277355B400E61A9D /* MockImageData.swift */; };
+		736D64FF27735CC800E61A9D /* FakeChannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64FE27735CC800E61A9D /* FakeChannels.swift */; };
+		736D650127735CD300E61A9D /* FakeCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D650027735CD300E61A9D /* FakeCategories.swift */; };
+		736D650327735F5F00E61A9D /* MockJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D650227735F5F00E61A9D /* MockJSON.swift */; };
+		736D650827736B5000E61A9D /* test_image_two.png in Resources */ = {isa = PBXBuildFile; fileRef = 736D650527736B4F00E61A9D /* test_image_two.png */; };
+		736D650927736B5000E61A9D /* test_image_one.png in Resources */ = {isa = PBXBuildFile; fileRef = 736D650627736B4F00E61A9D /* test_image_one.png */; };
+		736D650A27736B5000E61A9D /* test_image_three.png in Resources */ = {isa = PBXBuildFile; fileRef = 736D650727736B4F00E61A9D /* test_image_three.png */; };
+		736D650C27736CE500E61A9D /* MainInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D650B27736CE500E61A9D /* MainInteractorTest.swift */; };
+		736D650F27736DAF00E61A9D /* MockMainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D650E27736DAF00E61A9D /* MockMainPresenter.swift */; };
+		736D65122773717D00E61A9D /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D65112773717D00E61A9D /* ErrorHandler.swift */; };
+		736D65152773792200E61A9D /* MockMainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D65142773792200E61A9D /* MockMainInteractor.swift */; };
+		736D651727737C2500E61A9D /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D651627737C2500E61A9D /* MainPresenterTest.swift */; };
+		736D651927737C9F00E61A9D /* MockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D651827737C9F00E61A9D /* MockViewModel.swift */; };
+		736D651B27737CAA00E61A9D /* MockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D651A27737CAA00E61A9D /* MockView.swift */; };
+		736D651D27737DE200E61A9D /* MockMainWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D651C27737DE200E61A9D /* MockMainWireFrame.swift */; };
+		736D651F277380E700E61A9D /* MainViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D651E277380E700E61A9D /* MainViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		736D642327731F0300E61A9D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 736D640A27731F0100E61A9D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 736D641127731F0100E61A9D;
-			remoteInfo = "iTV Plus";
-		};
-		736D642D27731F0300E61A9D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 736D640A27731F0100E61A9D /* Project object */;
 			proxyType = 1;
@@ -72,7 +82,6 @@
 		736D641927731F0300E61A9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		736D641C27731F0300E61A9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		736D642227731F0300E61A9D /* iTV PlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iTV PlusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		736D642C27731F0300E61A9D /* iTV PlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iTV PlusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		736D643F27731F4F00E61A9D /* iTV-Plus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iTV-Plus-Info.plist"; path = "iTV Plus/Application/iTV-Plus-Info.plist"; sourceTree = SOURCE_ROOT; };
 		736D644027731F9F00E61A9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		736D648C27732B3400E61A9D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -109,6 +118,23 @@
 		736D64F027733C5400E61A9D /* PlayerWireFrameInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWireFrameInterface.swift; sourceTree = "<group>"; };
 		736D64F227733C5F00E61A9D /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		736D64F427733C6C00E61A9D /* PlayerVieModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVieModelInterface.swift; sourceTree = "<group>"; };
+		736D64F62773413F00E61A9D /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		736D64F8277355B400E61A9D /* MockImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockImageData.swift; sourceTree = "<group>"; };
+		736D64FE27735CC800E61A9D /* FakeChannels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeChannels.swift; sourceTree = "<group>"; };
+		736D650027735CD300E61A9D /* FakeCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCategories.swift; sourceTree = "<group>"; };
+		736D650227735F5F00E61A9D /* MockJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJSON.swift; sourceTree = "<group>"; };
+		736D650527736B4F00E61A9D /* test_image_two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_image_two.png; sourceTree = "<group>"; };
+		736D650627736B4F00E61A9D /* test_image_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_image_one.png; sourceTree = "<group>"; };
+		736D650727736B4F00E61A9D /* test_image_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_image_three.png; sourceTree = "<group>"; };
+		736D650B27736CE500E61A9D /* MainInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorTest.swift; sourceTree = "<group>"; };
+		736D650E27736DAF00E61A9D /* MockMainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainPresenter.swift; sourceTree = "<group>"; };
+		736D65112773717D00E61A9D /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		736D65142773792200E61A9D /* MockMainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainInteractor.swift; sourceTree = "<group>"; };
+		736D651627737C2500E61A9D /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
+		736D651827737C9F00E61A9D /* MockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewModel.swift; sourceTree = "<group>"; };
+		736D651A27737CAA00E61A9D /* MockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockView.swift; sourceTree = "<group>"; };
+		736D651C27737DE200E61A9D /* MockMainWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainWireFrame.swift; sourceTree = "<group>"; };
+		736D651E277380E700E61A9D /* MainViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,13 +152,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		736D642927731F0300E61A9D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -141,7 +160,6 @@
 			children = (
 				736D641427731F0100E61A9D /* iTV Plus */,
 				736D642527731F0300E61A9D /* iTV PlusTests */,
-				736D642F27731F0300E61A9D /* iTV PlusUITests */,
 				736D641327731F0100E61A9D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,7 +169,6 @@
 			children = (
 				736D641227731F0100E61A9D /* iTV Plus.app */,
 				736D642227731F0300E61A9D /* iTV PlusTests.xctest */,
-				736D642C27731F0300E61A9D /* iTV PlusUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +176,8 @@
 		736D641427731F0100E61A9D /* iTV Plus */ = {
 			isa = PBXGroup;
 			children = (
+				736D65132773776C00E61A9D /* App Constants */,
+				736D65102773715700E61A9D /* ErrorHandler */,
 				736D647E27732A3400E61A9D /* MainModule */,
 				736D647F27732A3D00E61A9D /* ChannelsModule */,
 				736D648027732A4D00E61A9D /* PlayerModule */,
@@ -190,13 +209,6 @@
 				736D648727732AB600E61A9D /* Mock-Stubs-Dummies-TestDoubles */,
 			);
 			path = "iTV PlusTests";
-			sourceTree = "<group>";
-		};
-		736D642F27731F0300E61A9D /* iTV PlusUITests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "iTV PlusUITests";
 			sourceTree = "<group>";
 		};
 		736D647D27732A1400E61A9D /* Application */ = {
@@ -263,6 +275,10 @@
 		736D648227732A7500E61A9D /* MainModuleTest */ = {
 			isa = PBXGroup;
 			children = (
+				736D650B27736CE500E61A9D /* MainInteractorTest.swift */,
+				736D651627737C2500E61A9D /* MainPresenterTest.swift */,
+				736D650D27736DAA00E61A9D /* Mock */,
+				736D651E277380E700E61A9D /* MainViewModelTest.swift */,
 			);
 			path = MainModuleTest;
 			sourceTree = "<group>";
@@ -298,6 +314,12 @@
 		736D648727732AB600E61A9D /* Mock-Stubs-Dummies-TestDoubles */ = {
 			isa = PBXGroup;
 			children = (
+				736D650427736B3D00E61A9D /* TestImages */,
+				736D64F62773413F00E61A9D /* MockURLSession.swift */,
+				736D64F8277355B400E61A9D /* MockImageData.swift */,
+				736D650227735F5F00E61A9D /* MockJSON.swift */,
+				736D64FE27735CC800E61A9D /* FakeChannels.swift */,
+				736D650027735CD300E61A9D /* FakeCategories.swift */,
 			);
 			path = "Mock-Stubs-Dummies-TestDoubles";
 			sourceTree = "<group>";
@@ -649,6 +671,43 @@
 			path = Interface;
 			sourceTree = "<group>";
 		};
+		736D650427736B3D00E61A9D /* TestImages */ = {
+			isa = PBXGroup;
+			children = (
+				736D650627736B4F00E61A9D /* test_image_one.png */,
+				736D650527736B4F00E61A9D /* test_image_two.png */,
+				736D650727736B4F00E61A9D /* test_image_three.png */,
+			);
+			path = TestImages;
+			sourceTree = "<group>";
+		};
+		736D650D27736DAA00E61A9D /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				736D650E27736DAF00E61A9D /* MockMainPresenter.swift */,
+				736D65142773792200E61A9D /* MockMainInteractor.swift */,
+				736D651827737C9F00E61A9D /* MockViewModel.swift */,
+				736D651A27737CAA00E61A9D /* MockView.swift */,
+				736D651C27737DE200E61A9D /* MockMainWireFrame.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		736D65102773715700E61A9D /* ErrorHandler */ = {
+			isa = PBXGroup;
+			children = (
+				736D65112773717D00E61A9D /* ErrorHandler.swift */,
+			);
+			path = ErrorHandler;
+			sourceTree = "<group>";
+		};
+		736D65132773776C00E61A9D /* App Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "App Constants";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -687,24 +746,6 @@
 			productReference = 736D642227731F0300E61A9D /* iTV PlusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		736D642B27731F0300E61A9D /* iTV PlusUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 736D643C27731F0300E61A9D /* Build configuration list for PBXNativeTarget "iTV PlusUITests" */;
-			buildPhases = (
-				736D642827731F0300E61A9D /* Sources */,
-				736D642927731F0300E61A9D /* Frameworks */,
-				736D642A27731F0300E61A9D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				736D642E27731F0300E61A9D /* PBXTargetDependency */,
-			);
-			name = "iTV PlusUITests";
-			productName = "iTV PlusUITests";
-			productReference = 736D642C27731F0300E61A9D /* iTV PlusUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -720,10 +761,7 @@
 					};
 					736D642127731F0300E61A9D = {
 						CreatedOnToolsVersion = 13.2;
-						TestTargetID = 736D641127731F0100E61A9D;
-					};
-					736D642B27731F0300E61A9D = {
-						CreatedOnToolsVersion = 13.2;
+						LastSwiftMigration = 1320;
 						TestTargetID = 736D641127731F0100E61A9D;
 					};
 				};
@@ -743,7 +781,6 @@
 			targets = (
 				736D641127731F0100E61A9D /* iTV Plus */,
 				736D642127731F0300E61A9D /* iTV PlusTests */,
-				736D642B27731F0300E61A9D /* iTV PlusUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -762,13 +799,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		736D642A27731F0300E61A9D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				736D650A27736B5000E61A9D /* test_image_three.png in Resources */,
+				736D650927736B5000E61A9D /* test_image_one.png in Resources */,
+				736D650827736B5000E61A9D /* test_image_two.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,6 +833,7 @@
 				736D64D7277336B300E61A9D /* ChannelsPresenter.swift in Sources */,
 				736D64F527733C6C00E61A9D /* PlayerVieModelInterface.swift in Sources */,
 				736D64E527733C1100E61A9D /* PlayerViewInterface.swift in Sources */,
+				736D65122773717D00E61A9D /* ErrorHandler.swift in Sources */,
 				736D64A927732EC800E61A9D /* MainEnvironmentalObject.swift in Sources */,
 				736D64D32773369B00E61A9D /* ChannelsInteractor.swift in Sources */,
 				736D64F127733C5400E61A9D /* PlayerWireFrameInterface.swift in Sources */,
@@ -823,13 +857,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		736D642827731F0300E61A9D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				736D651927737C9F00E61A9D /* MockViewModel.swift in Sources */,
+				736D650C27736CE500E61A9D /* MainInteractorTest.swift in Sources */,
+				736D650127735CD300E61A9D /* FakeCategories.swift in Sources */,
+				736D650F27736DAF00E61A9D /* MockMainPresenter.swift in Sources */,
+				736D651B27737CAA00E61A9D /* MockView.swift in Sources */,
+				736D64F72773413F00E61A9D /* MockURLSession.swift in Sources */,
+				736D650327735F5F00E61A9D /* MockJSON.swift in Sources */,
+				736D651D27737DE200E61A9D /* MockMainWireFrame.swift in Sources */,
+				736D651F277380E700E61A9D /* MainViewModelTest.swift in Sources */,
+				736D65152773792200E61A9D /* MockMainInteractor.swift in Sources */,
+				736D64FF27735CC800E61A9D /* FakeChannels.swift in Sources */,
+				736D651727737C2500E61A9D /* MainPresenterTest.swift in Sources */,
+				736D64F9277355B400E61A9D /* MockImageData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,11 +880,6 @@
 			isa = PBXTargetDependency;
 			target = 736D641127731F0100E61A9D /* iTV Plus */;
 			targetProxy = 736D642327731F0300E61A9D /* PBXContainerItemProxy */;
-		};
-		736D642E27731F0300E61A9D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 736D641127731F0100E61A9D /* iTV Plus */;
-			targetProxy = 736D642D27731F0300E61A9D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1024,14 +1059,21 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UU5J2SPKHT;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.risinggalaxy.com.iTV-PlusTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTV Plus.app/iTV Plus";
@@ -1044,10 +1086,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UU5J2SPKHT;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.risinggalaxy.com.iTV-PlusTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1056,42 +1104,6 @@
 				TARGETED_DEVICE_FAMILY = 3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTV Plus.app/iTV Plus";
 				TVOS_DEPLOYMENT_TARGET = 15.2;
-			};
-			name = Release;
-		};
-		736D643D27731F0300E61A9D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UU5J2SPKHT;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.risinggalaxy.com.iTV-PlusUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TEST_TARGET_NAME = "iTV Plus";
-			};
-			name = Debug;
-		};
-		736D643E27731F0300E61A9D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UU5J2SPKHT;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.risinggalaxy.com.iTV-PlusUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TEST_TARGET_NAME = "iTV Plus";
 			};
 			name = Release;
 		};
@@ -1121,15 +1133,6 @@
 			buildConfigurations = (
 				736D643A27731F0300E61A9D /* Debug */,
 				736D643B27731F0300E61A9D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		736D643C27731F0300E61A9D /* Build configuration list for PBXNativeTarget "iTV PlusUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				736D643D27731F0300E61A9D /* Debug */,
-				736D643E27731F0300E61A9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
