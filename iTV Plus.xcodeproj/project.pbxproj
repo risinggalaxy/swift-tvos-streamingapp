@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		736D641627731F0100E61A9D /* iTV_PlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D641527731F0100E61A9D /* iTV_PlusApp.swift */; };
+		736D641827731F0100E61A9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D641727731F0100E61A9D /* ContentView.swift */; };
+		736D641A27731F0300E61A9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736D641927731F0300E61A9D /* Assets.xcassets */; };
+		736D641D27731F0300E61A9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736D641C27731F0300E61A9D /* Preview Assets.xcassets */; };
+		736D642727731F0300E61A9D /* iTV_PlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D642627731F0300E61A9D /* iTV_PlusTests.swift */; };
+		736D643127731F0300E61A9D /* iTV_PlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D643027731F0300E61A9D /* iTV_PlusUITests.swift */; };
+		736D643327731F0300E61A9D /* iTV_PlusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D643227731F0300E61A9D /* iTV_PlusUITestsLaunchTests.swift */; };
+		736D644127731F9F00E61A9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D644027731F9F00E61A9D /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		736D642327731F0300E61A9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 736D640A27731F0100E61A9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 736D641127731F0100E61A9D;
+			remoteInfo = "iTV Plus";
+		};
+		736D642D27731F0300E61A9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 736D640A27731F0100E61A9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 736D641127731F0100E61A9D;
+			remoteInfo = "iTV Plus";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		736D641227731F0100E61A9D /* iTV Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTV Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		736D641527731F0100E61A9D /* iTV_PlusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTV_PlusApp.swift; sourceTree = "<group>"; };
+		736D641727731F0100E61A9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		736D641927731F0300E61A9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		736D641C27731F0300E61A9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		736D642227731F0300E61A9D /* iTV PlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iTV PlusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		736D642627731F0300E61A9D /* iTV_PlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTV_PlusTests.swift; sourceTree = "<group>"; };
+		736D642C27731F0300E61A9D /* iTV PlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iTV PlusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		736D643027731F0300E61A9D /* iTV_PlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTV_PlusUITests.swift; sourceTree = "<group>"; };
+		736D643227731F0300E61A9D /* iTV_PlusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTV_PlusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		736D643F27731F4F00E61A9D /* iTV-Plus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "iTV-Plus-Info.plist"; sourceTree = SOURCE_ROOT; };
+		736D644027731F9F00E61A9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		736D640F27731F0100E61A9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		736D641F27731F0300E61A9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		736D642927731F0300E61A9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		736D640927731F0100E61A9D = {
+			isa = PBXGroup;
+			children = (
+				736D641427731F0100E61A9D /* iTV Plus */,
+				736D642527731F0300E61A9D /* iTV PlusTests */,
+				736D642F27731F0300E61A9D /* iTV PlusUITests */,
+				736D641327731F0100E61A9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		736D641327731F0100E61A9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				736D641227731F0100E61A9D /* iTV Plus.app */,
+				736D642227731F0300E61A9D /* iTV PlusTests.xctest */,
+				736D642C27731F0300E61A9D /* iTV PlusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		736D641427731F0100E61A9D /* iTV Plus */ = {
+			isa = PBXGroup;
+			children = (
+				736D643F27731F4F00E61A9D /* iTV-Plus-Info.plist */,
+				736D641527731F0100E61A9D /* iTV_PlusApp.swift */,
+				736D644027731F9F00E61A9D /* AppDelegate.swift */,
+				736D641727731F0100E61A9D /* ContentView.swift */,
+				736D641927731F0300E61A9D /* Assets.xcassets */,
+				736D641B27731F0300E61A9D /* Preview Content */,
+			);
+			path = "iTV Plus";
+			sourceTree = "<group>";
+		};
+		736D641B27731F0300E61A9D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				736D641C27731F0300E61A9D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		736D642527731F0300E61A9D /* iTV PlusTests */ = {
+			isa = PBXGroup;
+			children = (
+				736D642627731F0300E61A9D /* iTV_PlusTests.swift */,
+			);
+			path = "iTV PlusTests";
+			sourceTree = "<group>";
+		};
+		736D642F27731F0300E61A9D /* iTV PlusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				736D643027731F0300E61A9D /* iTV_PlusUITests.swift */,
+				736D643227731F0300E61A9D /* iTV_PlusUITestsLaunchTests.swift */,
+			);
+			path = "iTV PlusUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		736D641127731F0100E61A9D /* iTV Plus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 736D643627731F0300E61A9D /* Build configuration list for PBXNativeTarget "iTV Plus" */;
+			buildPhases = (
+				736D640E27731F0100E61A9D /* Sources */,
+				736D640F27731F0100E61A9D /* Frameworks */,
+				736D641027731F0100E61A9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iTV Plus";
+			productName = "iTV Plus";
+			productReference = 736D641227731F0100E61A9D /* iTV Plus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		736D642127731F0300E61A9D /* iTV PlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 736D643927731F0300E61A9D /* Build configuration list for PBXNativeTarget "iTV PlusTests" */;
+			buildPhases = (
+				736D641E27731F0300E61A9D /* Sources */,
+				736D641F27731F0300E61A9D /* Frameworks */,
+				736D642027731F0300E61A9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				736D642427731F0300E61A9D /* PBXTargetDependency */,
+			);
+			name = "iTV PlusTests";
+			productName = "iTV PlusTests";
+			productReference = 736D642227731F0300E61A9D /* iTV PlusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		736D642B27731F0300E61A9D /* iTV PlusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 736D643C27731F0300E61A9D /* Build configuration list for PBXNativeTarget "iTV PlusUITests" */;
+			buildPhases = (
+				736D642827731F0300E61A9D /* Sources */,
+				736D642927731F0300E61A9D /* Frameworks */,
+				736D642A27731F0300E61A9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				736D642E27731F0300E61A9D /* PBXTargetDependency */,
+			);
+			name = "iTV PlusUITests";
+			productName = "iTV PlusUITests";
+			productReference = 736D642C27731F0300E61A9D /* iTV PlusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		736D640A27731F0100E61A9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					736D641127731F0100E61A9D = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					736D642127731F0300E61A9D = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 736D641127731F0100E61A9D;
+					};
+					736D642B27731F0300E61A9D = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 736D641127731F0100E61A9D;
+					};
+				};
+			};
+			buildConfigurationList = 736D640D27731F0100E61A9D /* Build configuration list for PBXProject "iTV Plus" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 736D640927731F0100E61A9D;
+			productRefGroup = 736D641327731F0100E61A9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				736D641127731F0100E61A9D /* iTV Plus */,
+				736D642127731F0300E61A9D /* iTV PlusTests */,
+				736D642B27731F0300E61A9D /* iTV PlusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		736D641027731F0100E61A9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				736D641D27731F0300E61A9D /* Preview Assets.xcassets in Resources */,
+				736D641A27731F0300E61A9D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		736D642027731F0300E61A9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		736D642A27731F0300E61A9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		736D640E27731F0100E61A9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				736D644127731F9F00E61A9D /* AppDelegate.swift in Sources */,
+				736D641827731F0100E61A9D /* ContentView.swift in Sources */,
+				736D641627731F0100E61A9D /* iTV_PlusApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		736D641E27731F0300E61A9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				736D642727731F0300E61A9D /* iTV_PlusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		736D642827731F0300E61A9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				736D643327731F0300E61A9D /* iTV_PlusUITestsLaunchTests.swift in Sources */,
+				736D643127731F0300E61A9D /* iTV_PlusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		736D642427731F0300E61A9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 736D641127731F0100E61A9D /* iTV Plus */;
+			targetProxy = 736D642327731F0300E61A9D /* PBXContainerItemProxy */;
+		};
+		736D642E27731F0300E61A9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 736D641127731F0100E61A9D /* iTV Plus */;
+			targetProxy = 736D642D27731F0300E61A9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		736D643427731F0300E61A9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 15.2;
+			};
+			name = Debug;
+		};
+		736D643527731F0300E61A9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 15.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		736D643727731F0300E61A9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iTV Plus/Preview Content\"";
+				DEVELOPMENT_TEAM = UU5J2SPKHT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iTV-Plus-Info.plist";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.risinggalaxy.com.iTV-Plus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		736D643827731F0300E61A9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iTV Plus/Preview Content\"";
+				DEVELOPMENT_TEAM = UU5J2SPKHT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iTV-Plus-Info.plist";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.risinggalaxy.com.iTV-Plus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		736D643A27731F0300E61A9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UU5J2SPKHT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.risinggalaxy.com.iTV-PlusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTV Plus.app/iTV Plus";
+				TVOS_DEPLOYMENT_TARGET = 15.2;
+			};
+			name = Debug;
+		};
+		736D643B27731F0300E61A9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UU5J2SPKHT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.risinggalaxy.com.iTV-PlusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTV Plus.app/iTV Plus";
+				TVOS_DEPLOYMENT_TARGET = 15.2;
+			};
+			name = Release;
+		};
+		736D643D27731F0300E61A9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UU5J2SPKHT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.risinggalaxy.com.iTV-PlusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "iTV Plus";
+			};
+			name = Debug;
+		};
+		736D643E27731F0300E61A9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UU5J2SPKHT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.risinggalaxy.com.iTV-PlusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "iTV Plus";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		736D640D27731F0100E61A9D /* Build configuration list for PBXProject "iTV Plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				736D643427731F0300E61A9D /* Debug */,
+				736D643527731F0300E61A9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		736D643627731F0300E61A9D /* Build configuration list for PBXNativeTarget "iTV Plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				736D643727731F0300E61A9D /* Debug */,
+				736D643827731F0300E61A9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		736D643927731F0300E61A9D /* Build configuration list for PBXNativeTarget "iTV PlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				736D643A27731F0300E61A9D /* Debug */,
+				736D643B27731F0300E61A9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		736D643C27731F0300E61A9D /* Build configuration list for PBXNativeTarget "iTV PlusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				736D643D27731F0300E61A9D /* Debug */,
+				736D643E27731F0300E61A9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 736D640A27731F0100E61A9D /* Project object */;
+}
