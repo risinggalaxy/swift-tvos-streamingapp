@@ -11,10 +11,18 @@
 		736D641827731F0100E61A9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D641727731F0100E61A9D /* ContentView.swift */; };
 		736D641A27731F0300E61A9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736D641927731F0300E61A9D /* Assets.xcassets */; };
 		736D641D27731F0300E61A9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736D641C27731F0300E61A9D /* Preview Assets.xcassets */; };
-		736D642727731F0300E61A9D /* iTV_PlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D642627731F0300E61A9D /* iTV_PlusTests.swift */; };
-		736D643127731F0300E61A9D /* iTV_PlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D643027731F0300E61A9D /* iTV_PlusUITests.swift */; };
-		736D643327731F0300E61A9D /* iTV_PlusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D643227731F0300E61A9D /* iTV_PlusUITestsLaunchTests.swift */; };
 		736D644127731F9F00E61A9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D644027731F9F00E61A9D /* AppDelegate.swift */; };
+		736D648D27732B3400E61A9D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D648C27732B3400E61A9D /* MainView.swift */; };
+		736D648F27732B4500E61A9D /* MainViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D648E27732B4500E61A9D /* MainViewInterface.swift */; };
+		736D649727732BCF00E61A9D /* MainInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D649627732BCF00E61A9D /* MainInteractorInterface.swift */; };
+		736D649927732BDE00E61A9D /* MainPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D649827732BDE00E61A9D /* MainPresenterInterface.swift */; };
+		736D649B27732BE800E61A9D /* MainWireFrameInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D649A27732BE800E61A9D /* MainWireFrameInterface.swift */; };
+		736D649E27732BF800E61A9D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D649D27732BF800E61A9D /* MainViewModel.swift */; };
+		736D64A127732C0900E61A9D /* MainViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64A027732C0900E61A9D /* MainViewModelInterface.swift */; };
+		736D64A327732C1400E61A9D /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64A227732C1400E61A9D /* MainInteractor.swift */; };
+		736D64A527732C2000E61A9D /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64A427732C2000E61A9D /* MainPresenter.swift */; };
+		736D64A727732C2A00E61A9D /* MainWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64A627732C2A00E61A9D /* MainWireFrame.swift */; };
+		736D64A927732EC800E61A9D /* MainEnvironmentalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64A827732EC800E61A9D /* MainEnvironmentalObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +49,20 @@
 		736D641927731F0300E61A9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		736D641C27731F0300E61A9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		736D642227731F0300E61A9D /* iTV PlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iTV PlusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		736D642627731F0300E61A9D /* iTV_PlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTV_PlusTests.swift; sourceTree = "<group>"; };
 		736D642C27731F0300E61A9D /* iTV PlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iTV PlusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		736D643027731F0300E61A9D /* iTV_PlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTV_PlusUITests.swift; sourceTree = "<group>"; };
-		736D643227731F0300E61A9D /* iTV_PlusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTV_PlusUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		736D643F27731F4F00E61A9D /* iTV-Plus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "iTV-Plus-Info.plist"; sourceTree = SOURCE_ROOT; };
+		736D643F27731F4F00E61A9D /* iTV-Plus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iTV-Plus-Info.plist"; path = "iTV Plus/Application/iTV-Plus-Info.plist"; sourceTree = SOURCE_ROOT; };
 		736D644027731F9F00E61A9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		736D648C27732B3400E61A9D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		736D648E27732B4500E61A9D /* MainViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInterface.swift; sourceTree = "<group>"; };
+		736D649627732BCF00E61A9D /* MainInteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorInterface.swift; sourceTree = "<group>"; };
+		736D649827732BDE00E61A9D /* MainPresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterInterface.swift; sourceTree = "<group>"; };
+		736D649A27732BE800E61A9D /* MainWireFrameInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireFrameInterface.swift; sourceTree = "<group>"; };
+		736D649D27732BF800E61A9D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		736D64A027732C0900E61A9D /* MainViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelInterface.swift; sourceTree = "<group>"; };
+		736D64A227732C1400E61A9D /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		736D64A427732C2000E61A9D /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		736D64A627732C2A00E61A9D /* MainWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireFrame.swift; sourceTree = "<group>"; };
+		736D64A827732EC800E61A9D /* MainEnvironmentalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEnvironmentalObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +113,13 @@
 		736D641427731F0100E61A9D /* iTV Plus */ = {
 			isa = PBXGroup;
 			children = (
-				736D643F27731F4F00E61A9D /* iTV-Plus-Info.plist */,
-				736D641527731F0100E61A9D /* iTV_PlusApp.swift */,
-				736D644027731F9F00E61A9D /* AppDelegate.swift */,
-				736D641727731F0100E61A9D /* ContentView.swift */,
-				736D641927731F0300E61A9D /* Assets.xcassets */,
+				736D647E27732A3400E61A9D /* MainModule */,
+				736D647F27732A3D00E61A9D /* ChannelsModule */,
+				736D648027732A4D00E61A9D /* PlayerModule */,
+				736D648127732A5A00E61A9D /* SettingsModule */,
+				736D648927732AFA00E61A9D /* Networking */,
+				736D648827732AF500E61A9D /* Models */,
+				736D647D27732A1400E61A9D /* Application */,
 				736D641B27731F0300E61A9D /* Preview Content */,
 			);
 			path = "iTV Plus";
@@ -118,7 +136,12 @@
 		736D642527731F0300E61A9D /* iTV PlusTests */ = {
 			isa = PBXGroup;
 			children = (
-				736D642627731F0300E61A9D /* iTV_PlusTests.swift */,
+				736D648327732A7D00E61A9D /* ChannelsModuleTest */,
+				736D648227732A7500E61A9D /* MainModuleTest */,
+				736D648427732A8900E61A9D /* PlayerModuleTest */,
+				736D648527732A9500E61A9D /* SettingsModuleTest */,
+				736D648627732AA000E61A9D /* NetworkingTest */,
+				736D648727732AB600E61A9D /* Mock-Stubs-Dummies-TestDoubles */,
 			);
 			path = "iTV PlusTests";
 			sourceTree = "<group>";
@@ -126,10 +149,195 @@
 		736D642F27731F0300E61A9D /* iTV PlusUITests */ = {
 			isa = PBXGroup;
 			children = (
-				736D643027731F0300E61A9D /* iTV_PlusUITests.swift */,
-				736D643227731F0300E61A9D /* iTV_PlusUITestsLaunchTests.swift */,
 			);
 			path = "iTV PlusUITests";
+			sourceTree = "<group>";
+		};
+		736D647D27732A1400E61A9D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				736D643F27731F4F00E61A9D /* iTV-Plus-Info.plist */,
+				736D641527731F0100E61A9D /* iTV_PlusApp.swift */,
+				736D644027731F9F00E61A9D /* AppDelegate.swift */,
+				736D641727731F0100E61A9D /* ContentView.swift */,
+				736D641927731F0300E61A9D /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		736D647E27732A3400E61A9D /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				736D64A827732EC800E61A9D /* MainEnvironmentalObject.swift */,
+				736D649C27732BEB00E61A9D /* MainViewModel */,
+				736D648B27732B2200E61A9D /* View */,
+				736D649027732B5B00E61A9D /* Interactor */,
+				736D649127732B6900E61A9D /* Presenter */,
+				736D649227732B7C00E61A9D /* WireFrame */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		736D647F27732A3D00E61A9D /* ChannelsModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChannelsModule;
+			sourceTree = "<group>";
+		};
+		736D648027732A4D00E61A9D /* PlayerModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PlayerModule;
+			sourceTree = "<group>";
+		};
+		736D648127732A5A00E61A9D /* SettingsModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettingsModule;
+			sourceTree = "<group>";
+		};
+		736D648227732A7500E61A9D /* MainModuleTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainModuleTest;
+			sourceTree = "<group>";
+		};
+		736D648327732A7D00E61A9D /* ChannelsModuleTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChannelsModuleTest;
+			sourceTree = "<group>";
+		};
+		736D648427732A8900E61A9D /* PlayerModuleTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PlayerModuleTest;
+			sourceTree = "<group>";
+		};
+		736D648527732A9500E61A9D /* SettingsModuleTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettingsModuleTest;
+			sourceTree = "<group>";
+		};
+		736D648627732AA000E61A9D /* NetworkingTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkingTest;
+			sourceTree = "<group>";
+		};
+		736D648727732AB600E61A9D /* Mock-Stubs-Dummies-TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Mock-Stubs-Dummies-TestDoubles";
+			sourceTree = "<group>";
+		};
+		736D648827732AF500E61A9D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		736D648927732AFA00E61A9D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		736D648A27732B1A00E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				736D648E27732B4500E61A9D /* MainViewInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D648B27732B2200E61A9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				736D648C27732B3400E61A9D /* MainView.swift */,
+				736D648A27732B1A00E61A9D /* Interface */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		736D649027732B5B00E61A9D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				736D64A227732C1400E61A9D /* MainInteractor.swift */,
+				736D649327732BA500E61A9D /* Interface */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		736D649127732B6900E61A9D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				736D64A427732C2000E61A9D /* MainPresenter.swift */,
+				736D649427732BA800E61A9D /* Interface */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		736D649227732B7C00E61A9D /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				736D64A627732C2A00E61A9D /* MainWireFrame.swift */,
+				736D649527732BAA00E61A9D /* Interface */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		736D649327732BA500E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				736D649627732BCF00E61A9D /* MainInteractorInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D649427732BA800E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				736D649827732BDE00E61A9D /* MainPresenterInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D649527732BAA00E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				736D649A27732BE800E61A9D /* MainWireFrameInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D649C27732BEB00E61A9D /* MainViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				736D649D27732BF800E61A9D /* MainViewModel.swift */,
+				736D649F27732BFB00E61A9D /* Interface */,
+			);
+			path = MainViewModel;
+			sourceTree = "<group>";
+		};
+		736D649F27732BFB00E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				736D64A027732C0900E61A9D /* MainViewModelInterface.swift */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +471,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				736D644127731F9F00E61A9D /* AppDelegate.swift in Sources */,
+				736D648D27732B3400E61A9D /* MainView.swift in Sources */,
+				736D649927732BDE00E61A9D /* MainPresenterInterface.swift in Sources */,
+				736D64A127732C0900E61A9D /* MainViewModelInterface.swift in Sources */,
 				736D641827731F0100E61A9D /* ContentView.swift in Sources */,
+				736D64A927732EC800E61A9D /* MainEnvironmentalObject.swift in Sources */,
+				736D648F27732B4500E61A9D /* MainViewInterface.swift in Sources */,
+				736D64A327732C1400E61A9D /* MainInteractor.swift in Sources */,
+				736D64A527732C2000E61A9D /* MainPresenter.swift in Sources */,
 				736D641627731F0100E61A9D /* iTV_PlusApp.swift in Sources */,
+				736D649727732BCF00E61A9D /* MainInteractorInterface.swift in Sources */,
+				736D649B27732BE800E61A9D /* MainWireFrameInterface.swift in Sources */,
+				736D649E27732BF800E61A9D /* MainViewModel.swift in Sources */,
+				736D64A727732C2A00E61A9D /* MainWireFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +491,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				736D642727731F0300E61A9D /* iTV_PlusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +498,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				736D643327731F0300E61A9D /* iTV_PlusUITestsLaunchTests.swift in Sources */,
-				736D643127731F0300E61A9D /* iTV_PlusUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

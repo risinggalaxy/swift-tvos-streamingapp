@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftUI
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,11 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    
     internal func setupFirstView() {
         let uiWindow = UIWindow(frame: UIScreen.main.coordinateSpace.bounds)
         window = uiWindow
-        uiWindow.rootViewController = UIHostingController(rootView: ContentView())
+        let view = MainWireFrame.presentViewController()
+        uiWindow.rootViewController = view
         uiWindow.makeKeyAndVisible()
     }
     
