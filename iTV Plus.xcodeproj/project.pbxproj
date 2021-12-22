@@ -23,6 +23,29 @@
 		736D64A527732C2000E61A9D /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64A427732C2000E61A9D /* MainPresenter.swift */; };
 		736D64A727732C2A00E61A9D /* MainWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64A627732C2A00E61A9D /* MainWireFrame.swift */; };
 		736D64A927732EC800E61A9D /* MainEnvironmentalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64A827732EC800E61A9D /* MainEnvironmentalObject.swift */; };
+		736D64AB2773336000E61A9D /* Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64AA2773336000E61A9D /* Channels.swift */; };
+		736D64AD2773337100E61A9D /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64AC2773337100E61A9D /* Categories.swift */; };
+		736D64B42773357C00E61A9D /* ChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64B32773357C00E61A9D /* ChannelsView.swift */; };
+		736D64CA2773364300E61A9D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64C92773364300E61A9D /* SettingsView.swift */; };
+		736D64D12773368F00E61A9D /* ChannelsViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64D02773368F00E61A9D /* ChannelsViewInterface.swift */; };
+		736D64D32773369B00E61A9D /* ChannelsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64D22773369B00E61A9D /* ChannelsInteractor.swift */; };
+		736D64D5277336A500E61A9D /* ChannelsInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64D4277336A500E61A9D /* ChannelsInteractorInterface.swift */; };
+		736D64D7277336B300E61A9D /* ChannelsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64D6277336B300E61A9D /* ChannelsPresenter.swift */; };
+		736D64D9277337E300E61A9D /* ChannelsPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64D8277337E300E61A9D /* ChannelsPresenterInterface.swift */; };
+		736D64DB277337EF00E61A9D /* ChannelsWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64DA277337EF00E61A9D /* ChannelsWireFrame.swift */; };
+		736D64DD2773380000E61A9D /* ChannelsWireFrameInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64DC2773380000E61A9D /* ChannelsWireFrameInterface.swift */; };
+		736D64DF2773381100E61A9D /* ChannelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64DE2773381100E61A9D /* ChannelsViewModel.swift */; };
+		736D64E12773381C00E61A9D /* ChannelsViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64E02773381C00E61A9D /* ChannelsViewModelInterface.swift */; };
+		736D64E327733BFB00E61A9D /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64E227733BFB00E61A9D /* PlayerView.swift */; };
+		736D64E527733C1100E61A9D /* PlayerViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64E427733C1100E61A9D /* PlayerViewInterface.swift */; };
+		736D64E727733C1D00E61A9D /* PlayerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64E627733C1D00E61A9D /* PlayerInteractor.swift */; };
+		736D64E927733C2400E61A9D /* PlayerInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64E827733C2400E61A9D /* PlayerInteractorInterface.swift */; };
+		736D64EB27733C3100E61A9D /* PlayerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64EA27733C3100E61A9D /* PlayerPresenter.swift */; };
+		736D64ED27733C3B00E61A9D /* PlayerPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64EC27733C3B00E61A9D /* PlayerPresenterInterface.swift */; };
+		736D64EF27733C4C00E61A9D /* PlayerWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64EE27733C4C00E61A9D /* PlayerWireFrame.swift */; };
+		736D64F127733C5400E61A9D /* PlayerWireFrameInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64F027733C5400E61A9D /* PlayerWireFrameInterface.swift */; };
+		736D64F327733C5F00E61A9D /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64F227733C5F00E61A9D /* PlayerViewModel.swift */; };
+		736D64F527733C6C00E61A9D /* PlayerVieModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D64F427733C6C00E61A9D /* PlayerVieModelInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +86,29 @@
 		736D64A427732C2000E61A9D /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		736D64A627732C2A00E61A9D /* MainWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireFrame.swift; sourceTree = "<group>"; };
 		736D64A827732EC800E61A9D /* MainEnvironmentalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEnvironmentalObject.swift; sourceTree = "<group>"; };
+		736D64AA2773336000E61A9D /* Channels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channels.swift; sourceTree = "<group>"; };
+		736D64AC2773337100E61A9D /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		736D64B32773357C00E61A9D /* ChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsView.swift; sourceTree = "<group>"; };
+		736D64C92773364300E61A9D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		736D64D02773368F00E61A9D /* ChannelsViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewInterface.swift; sourceTree = "<group>"; };
+		736D64D22773369B00E61A9D /* ChannelsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsInteractor.swift; sourceTree = "<group>"; };
+		736D64D4277336A500E61A9D /* ChannelsInteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsInteractorInterface.swift; sourceTree = "<group>"; };
+		736D64D6277336B300E61A9D /* ChannelsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsPresenter.swift; sourceTree = "<group>"; };
+		736D64D8277337E300E61A9D /* ChannelsPresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsPresenterInterface.swift; sourceTree = "<group>"; };
+		736D64DA277337EF00E61A9D /* ChannelsWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsWireFrame.swift; sourceTree = "<group>"; };
+		736D64DC2773380000E61A9D /* ChannelsWireFrameInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsWireFrameInterface.swift; sourceTree = "<group>"; };
+		736D64DE2773381100E61A9D /* ChannelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewModel.swift; sourceTree = "<group>"; };
+		736D64E02773381C00E61A9D /* ChannelsViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewModelInterface.swift; sourceTree = "<group>"; };
+		736D64E227733BFB00E61A9D /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		736D64E427733C1100E61A9D /* PlayerViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewInterface.swift; sourceTree = "<group>"; };
+		736D64E627733C1D00E61A9D /* PlayerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInteractor.swift; sourceTree = "<group>"; };
+		736D64E827733C2400E61A9D /* PlayerInteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInteractorInterface.swift; sourceTree = "<group>"; };
+		736D64EA27733C3100E61A9D /* PlayerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPresenter.swift; sourceTree = "<group>"; };
+		736D64EC27733C3B00E61A9D /* PlayerPresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPresenterInterface.swift; sourceTree = "<group>"; };
+		736D64EE27733C4C00E61A9D /* PlayerWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWireFrame.swift; sourceTree = "<group>"; };
+		736D64F027733C5400E61A9D /* PlayerWireFrameInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWireFrameInterface.swift; sourceTree = "<group>"; };
+		736D64F227733C5F00E61A9D /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		736D64F427733C6C00E61A9D /* PlayerVieModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVieModelInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +227,11 @@
 		736D647F27732A3D00E61A9D /* ChannelsModule */ = {
 			isa = PBXGroup;
 			children = (
+				736D64B22773354D00E61A9D /* ChannelsView */,
+				736D64B12773354500E61A9D /* ChannelsInteractor */,
+				736D64B02773354300E61A9D /* ChannelsPresenter */,
+				736D64AF2773354100E61A9D /* ChannelsWireFrame */,
+				736D64AE2773353E00E61A9D /* ChannelsViewModel */,
 			);
 			path = ChannelsModule;
 			sourceTree = "<group>";
@@ -188,6 +239,11 @@
 		736D648027732A4D00E61A9D /* PlayerModule */ = {
 			isa = PBXGroup;
 			children = (
+				736D64BE277335C700E61A9D /* PlayerView */,
+				736D64BD277335C300E61A9D /* PlayerInteractor */,
+				736D64BC277335C000E61A9D /* PlayerPresenter */,
+				736D64BB277335BE00E61A9D /* PlayerWireFrame */,
+				736D64BA277335BA00E61A9D /* PlayerViewModel */,
 			);
 			path = PlayerModule;
 			sourceTree = "<group>";
@@ -195,6 +251,11 @@
 		736D648127732A5A00E61A9D /* SettingsModule */ = {
 			isa = PBXGroup;
 			children = (
+				736D64C82773361600E61A9D /* SettingsView */,
+				736D64C72773361300E61A9D /* SettingsInteractor */,
+				736D64C62773361100E61A9D /* SettingsPresenter */,
+				736D64C52773360F00E61A9D /* SettingsWireframe */,
+				736D64C42773360500E61A9D /* SettingsViewModel */,
 			);
 			path = SettingsModule;
 			sourceTree = "<group>";
@@ -244,6 +305,8 @@
 		736D648827732AF500E61A9D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				736D64AA2773336000E61A9D /* Channels.swift */,
+				736D64AC2773337100E61A9D /* Categories.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -336,6 +399,252 @@
 			isa = PBXGroup;
 			children = (
 				736D64A027732C0900E61A9D /* MainViewModelInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D64AE2773353E00E61A9D /* ChannelsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				736D64DE2773381100E61A9D /* ChannelsViewModel.swift */,
+				736D64B92773359600E61A9D /* Interface */,
+			);
+			path = ChannelsViewModel;
+			sourceTree = "<group>";
+		};
+		736D64AF2773354100E61A9D /* ChannelsWireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				736D64DA277337EF00E61A9D /* ChannelsWireFrame.swift */,
+				736D64B82773359400E61A9D /* Interface */,
+			);
+			path = ChannelsWireFrame;
+			sourceTree = "<group>";
+		};
+		736D64B02773354300E61A9D /* ChannelsPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				736D64D6277336B300E61A9D /* ChannelsPresenter.swift */,
+				736D64B72773359200E61A9D /* Interface */,
+			);
+			path = ChannelsPresenter;
+			sourceTree = "<group>";
+		};
+		736D64B12773354500E61A9D /* ChannelsInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				736D64D22773369B00E61A9D /* ChannelsInteractor.swift */,
+				736D64B62773358F00E61A9D /* Interface */,
+			);
+			path = ChannelsInteractor;
+			sourceTree = "<group>";
+		};
+		736D64B22773354D00E61A9D /* ChannelsView */ = {
+			isa = PBXGroup;
+			children = (
+				736D64B32773357C00E61A9D /* ChannelsView.swift */,
+				736D64B52773358D00E61A9D /* Interface */,
+			);
+			path = ChannelsView;
+			sourceTree = "<group>";
+		};
+		736D64B52773358D00E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				736D64D02773368F00E61A9D /* ChannelsViewInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D64B62773358F00E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				736D64D4277336A500E61A9D /* ChannelsInteractorInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D64B72773359200E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				736D64D8277337E300E61A9D /* ChannelsPresenterInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D64B82773359400E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				736D64DC2773380000E61A9D /* ChannelsWireFrameInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D64B92773359600E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				736D64E02773381C00E61A9D /* ChannelsViewModelInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D64BA277335BA00E61A9D /* PlayerViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				736D64F227733C5F00E61A9D /* PlayerViewModel.swift */,
+				736D64C3277335EC00E61A9D /* Interface */,
+			);
+			path = PlayerViewModel;
+			sourceTree = "<group>";
+		};
+		736D64BB277335BE00E61A9D /* PlayerWireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				736D64EE27733C4C00E61A9D /* PlayerWireFrame.swift */,
+				736D64C2277335EA00E61A9D /* Interface */,
+			);
+			path = PlayerWireFrame;
+			sourceTree = "<group>";
+		};
+		736D64BC277335C000E61A9D /* PlayerPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				736D64EA27733C3100E61A9D /* PlayerPresenter.swift */,
+				736D64C1277335E800E61A9D /* Interface */,
+			);
+			path = PlayerPresenter;
+			sourceTree = "<group>";
+		};
+		736D64BD277335C300E61A9D /* PlayerInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				736D64E627733C1D00E61A9D /* PlayerInteractor.swift */,
+				736D64C0277335E600E61A9D /* Interface */,
+			);
+			path = PlayerInteractor;
+			sourceTree = "<group>";
+		};
+		736D64BE277335C700E61A9D /* PlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				736D64E227733BFB00E61A9D /* PlayerView.swift */,
+				736D64BF277335E400E61A9D /* Interface */,
+			);
+			path = PlayerView;
+			sourceTree = "<group>";
+		};
+		736D64BF277335E400E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				736D64E427733C1100E61A9D /* PlayerViewInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D64C0277335E600E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				736D64E827733C2400E61A9D /* PlayerInteractorInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D64C1277335E800E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				736D64EC27733C3B00E61A9D /* PlayerPresenterInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D64C2277335EA00E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				736D64F027733C5400E61A9D /* PlayerWireFrameInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D64C3277335EC00E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				736D64F427733C6C00E61A9D /* PlayerVieModelInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D64C42773360500E61A9D /* SettingsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				736D64CF2773367400E61A9D /* Interface */,
+			);
+			path = SettingsViewModel;
+			sourceTree = "<group>";
+		};
+		736D64C52773360F00E61A9D /* SettingsWireframe */ = {
+			isa = PBXGroup;
+			children = (
+				736D64CE2773367000E61A9D /* Interface */,
+			);
+			path = SettingsWireframe;
+			sourceTree = "<group>";
+		};
+		736D64C62773361100E61A9D /* SettingsPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				736D64CD2773366C00E61A9D /* Interface */,
+			);
+			path = SettingsPresenter;
+			sourceTree = "<group>";
+		};
+		736D64C72773361300E61A9D /* SettingsInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				736D64CC2773366800E61A9D /* Interface */,
+			);
+			path = SettingsInteractor;
+			sourceTree = "<group>";
+		};
+		736D64C82773361600E61A9D /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				736D64CB2773366000E61A9D /* Interface */,
+				736D64C92773364300E61A9D /* SettingsView.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		736D64CB2773366000E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D64CC2773366800E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D64CD2773366C00E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D64CE2773367000E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		736D64CF2773367400E61A9D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -470,16 +779,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				736D64DB277337EF00E61A9D /* ChannelsWireFrame.swift in Sources */,
+				736D64EF27733C4C00E61A9D /* PlayerWireFrame.swift in Sources */,
+				736D64E727733C1D00E61A9D /* PlayerInteractor.swift in Sources */,
 				736D644127731F9F00E61A9D /* AppDelegate.swift in Sources */,
+				736D64E12773381C00E61A9D /* ChannelsViewModelInterface.swift in Sources */,
+				736D64E927733C2400E61A9D /* PlayerInteractorInterface.swift in Sources */,
+				736D64ED27733C3B00E61A9D /* PlayerPresenterInterface.swift in Sources */,
+				736D64AD2773337100E61A9D /* Categories.swift in Sources */,
+				736D64B42773357C00E61A9D /* ChannelsView.swift in Sources */,
+				736D64CA2773364300E61A9D /* SettingsView.swift in Sources */,
+				736D64D5277336A500E61A9D /* ChannelsInteractorInterface.swift in Sources */,
 				736D648D27732B3400E61A9D /* MainView.swift in Sources */,
 				736D649927732BDE00E61A9D /* MainPresenterInterface.swift in Sources */,
 				736D64A127732C0900E61A9D /* MainViewModelInterface.swift in Sources */,
+				736D64DD2773380000E61A9D /* ChannelsWireFrameInterface.swift in Sources */,
 				736D641827731F0100E61A9D /* ContentView.swift in Sources */,
+				736D64D12773368F00E61A9D /* ChannelsViewInterface.swift in Sources */,
+				736D64D9277337E300E61A9D /* ChannelsPresenterInterface.swift in Sources */,
+				736D64D7277336B300E61A9D /* ChannelsPresenter.swift in Sources */,
+				736D64F527733C6C00E61A9D /* PlayerVieModelInterface.swift in Sources */,
+				736D64E527733C1100E61A9D /* PlayerViewInterface.swift in Sources */,
 				736D64A927732EC800E61A9D /* MainEnvironmentalObject.swift in Sources */,
+				736D64D32773369B00E61A9D /* ChannelsInteractor.swift in Sources */,
+				736D64F127733C5400E61A9D /* PlayerWireFrameInterface.swift in Sources */,
+				736D64DF2773381100E61A9D /* ChannelsViewModel.swift in Sources */,
+				736D64EB27733C3100E61A9D /* PlayerPresenter.swift in Sources */,
 				736D648F27732B4500E61A9D /* MainViewInterface.swift in Sources */,
 				736D64A327732C1400E61A9D /* MainInteractor.swift in Sources */,
 				736D64A527732C2000E61A9D /* MainPresenter.swift in Sources */,
 				736D641627731F0100E61A9D /* iTV_PlusApp.swift in Sources */,
+				736D64F327733C5F00E61A9D /* PlayerViewModel.swift in Sources */,
+				736D64AB2773336000E61A9D /* Channels.swift in Sources */,
+				736D64E327733BFB00E61A9D /* PlayerView.swift in Sources */,
 				736D649727732BCF00E61A9D /* MainInteractorInterface.swift in Sources */,
 				736D649B27732BE800E61A9D /* MainWireFrameInterface.swift in Sources */,
 				736D649E27732BF800E61A9D /* MainViewModel.swift in Sources */,
