@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import AppResources
+
 @testable import iTV_Plus
 
 class MockMainInteractor: MainInteractorInterface {

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AppResources
 
 protocol DownloadServiceInterface {
     var urlSession: URLSession { get set }

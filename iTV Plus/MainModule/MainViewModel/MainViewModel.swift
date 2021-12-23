@@ -7,13 +7,12 @@
 
 import Combine
 import SwiftUI
-import iTV_PlusTests
-
+import AppResources
 
 class MainViewModel: ObservableObject, MainViewModelInterface {
     
     let objectWillChange: ObservableObjectPublisher = ObservableObjectPublisher()
-
+    
     @Published var categories: [Categories] = FakeCategories.categories {
         didSet {
             DispatchQueue.main.async { [weak self] in

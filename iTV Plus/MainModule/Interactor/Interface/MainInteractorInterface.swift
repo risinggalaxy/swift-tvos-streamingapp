@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AppResources
 
 protocol MainInteractorInterface {
     var presenter: MainPresenterInterface? { get set }

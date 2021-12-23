@@ -6,6 +6,8 @@
 //
 
 import XCTest
+import AppResources
+
 @testable import iTV_Plus
 
 class MainInteractorTest: XCTestCase {
