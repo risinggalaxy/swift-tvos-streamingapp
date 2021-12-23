@@ -17,7 +17,7 @@ class MockMainPresenter: MainPresenterInterface {
     var interactor: MainInteractorInterface?
     var wireFrame: MainWireFrameInterface?
     
-    func updateViewModel(_ categories: [Categories]) {
+    func updateViewModel(_ categories: [Categorie]) {
     }
     
     func notifyViewWithError(message: String) {

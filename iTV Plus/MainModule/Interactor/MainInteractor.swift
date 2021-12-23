@@ -13,7 +13,7 @@ class MainInteractor: MainInteractorInterface {
     var urlSession: URLSession?
     var presenter: MainPresenterInterface?
     var downloadService: DownloadService?
-    var categories: [Categories]! = [] {
+    var categories: [Categorie]! = [] {
         didSet {
             presenter?.updateViewModel(categories)
         }
@@ -22,7 +22,7 @@ class MainInteractor: MainInteractorInterface {
     
     init(urlSession: URLSession = .shared) {
         self.urlSession = urlSession
-        self.downloadService = DownloadService(urlSession: urlSession, urlString: URLString.urlString)
+        self.downloadService = DownloadService(urlSession: urlSession, urlString: ChannelsDownloadURL.urlString)
         startDownload(with: downloadService!)
      
     }
@@ -45,10 +45,10 @@ class MainInteractor: MainInteractorInterface {
         }
     }
     
-    func loadJSON( _ data: Data, completionHandler: @escaping ([Categories]?, ErrorHandler?) -> Void) {
+    func loadJSON( _ data: Data, completionHandler: @escaping ([Categorie]?, ErrorHandler?) -> Void) {
         let decoder = JSONDecoder()
         do {
-            completionHandler(try decoder.decode([Categories].self, from: data), nil)
+            completionHandler(try decoder.decode([Categorie].self, from: data), nil)
         } catch {
             completionHandler(nil, ErrorHandler.failedToParsJSON)
         }

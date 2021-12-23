@@ -17,7 +17,7 @@ struct MainView: View, MainViewInterface {
         if !mainViewModel.categories.isEmpty {
             List {
                 ForEach(mainViewModel.categories, id: \.self) { category in
-                    Text(category.title)
+                    CellDesign(category: category)
                 }
             }
         } else {

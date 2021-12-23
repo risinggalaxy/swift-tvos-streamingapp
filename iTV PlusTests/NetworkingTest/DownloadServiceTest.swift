@@ -18,7 +18,7 @@ class DownloadServiceTest: XCTestCase {
         let configuration = URLSessionConfiguration.ephemeral
         configuration.protocolClasses = [MockURLProtocol.self]
         let urlSession = URLSession(configuration: configuration)
-        sut = DownloadService(urlSession: urlSession, urlString: URLString.urlString)
+        sut = DownloadService(urlSession: urlSession, urlString: ChannelsDownloadURL.urlString)
     }
     
     override func tearDown() {
@@ -65,4 +65,6 @@ class DownloadServiceTest: XCTestCase {
         }
         wait(for: [expectation], timeout: 2.0)
     }
+    
+    
 }

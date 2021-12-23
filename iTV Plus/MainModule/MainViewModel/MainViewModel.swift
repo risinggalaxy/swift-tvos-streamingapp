@@ -13,7 +13,7 @@ class MainViewModel: ObservableObject, MainViewModelInterface {
     
     let objectWillChange: ObservableObjectPublisher = ObservableObjectPublisher()
     
-    @Published var categories: [Categories] = FakeCategories.categories {
+    @Published var categories: [Categorie] = FakeCategories.categories {
         didSet {
             DispatchQueue.main.async { [weak self] in
                 self?.objectWillChange.send()
