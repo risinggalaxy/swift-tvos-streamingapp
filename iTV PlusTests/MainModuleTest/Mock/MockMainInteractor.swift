@@ -10,8 +10,9 @@ import Foundation
 
 class MockMainInteractor: MainInteractorInterface {
     
+    var urlSession: URLSession?
+    var downloadService: DownloadService?
     var didPushUpdateToPresenter: Bool = false
-    
     var presenter: MainPresenterInterface?
     var categories: [Categories]! = [] {
         didSet {
@@ -24,9 +25,9 @@ class MockMainInteractor: MainInteractorInterface {
     
     var didPassDataToPresenter: Bool?
     
-    func loadJSON<T: Codable>(_ data: Data) throws -> T {
-        let jsonDecoder = JSONDecoder()
-        return try! jsonDecoder.decode(T.self, from: data)
+    
+    func loadJSON(_ data: Data, completionHandler: @escaping ([Categories]?, ErrorHandler?) -> Void) {
     }
+    
     
 }

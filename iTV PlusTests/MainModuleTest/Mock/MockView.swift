@@ -11,7 +11,7 @@ import SwiftUI
 struct MockView: View, MainViewInterface {
     
     var presenter: MainPresenterInterface?
-    @ObservedObject var viewModel: MainViewModel
+    @StateObject var viewModel: MainViewModel
     
     var body: some View {
         Text("Hello World")

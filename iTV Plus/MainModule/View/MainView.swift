@@ -10,13 +10,18 @@ import SwiftUI
 struct MainView: View, MainViewInterface {
     
     var presenter: MainPresenterInterface?
-    @ObservedObject var mainViewModel: MainViewModel
+    @StateObject var mainViewModel: MainViewModel
     
     var body: some View {
-        List {
-            ForEach(mainViewModel.categories, id: \.self) { category in
-                
+        if !mainViewModel.categories.isEmpty {
+            List {
+                ForEach(mainViewModel.categories, id: \.self) { category in
+                    Text(category.title)
+                }
             }
+        } else {
+            Text(mainViewModel.errorMessage)
+                .font(.system(size: 25, weight: .bold, design: .default))
         }
     }
 }

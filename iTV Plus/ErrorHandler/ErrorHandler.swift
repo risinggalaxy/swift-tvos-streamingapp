@@ -7,8 +7,18 @@
 
 import Foundation
 
-enum ErrorHandler: Error {
+enum ErrorHandler: LocalizedError, Equatable {
     case    failedToLoadURL,
             failedToParsJSON,
-            failedToRefreshData
+            failedToRefreshData,
+            failedRequest(description: String)
+    
+    var errorDescription: String? {
+        switch self {
+        case .failedToParsJSON: return "Failed To Load JSON, Probably Bad JSON File"
+        case .failedToLoadURL: return "Failed To Load URL, Probably Bad URL Address"
+        case .failedToRefreshData: return "Failed To Refresh Data"
+        case .failedRequest(let description): return description
+        }
+    }
 }

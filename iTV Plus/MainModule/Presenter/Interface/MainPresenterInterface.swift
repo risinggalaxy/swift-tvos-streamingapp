@@ -13,5 +13,6 @@ protocol MainPresenterInterface {
     var interactor: MainInteractorInterface? { get set }
     var wireFrame: MainWireFrameInterface? { get set }
     func updateViewModel( _ categories: [Categories] )
+    func notifyViewWithError(message: String)
     
 }

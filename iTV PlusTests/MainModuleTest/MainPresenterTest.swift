@@ -35,7 +35,6 @@ class MainPresenterTest: XCTestCase {
         super.tearDown()
     }
     
-    
     func testMainPresenter_WhenCategoriesReceived_ShouldPushCategoriesToViewModel() {
         XCTAssertTrue(mockViewModel.categories.isEmpty)
         sut.updateViewModel(FakeCategories.categories)

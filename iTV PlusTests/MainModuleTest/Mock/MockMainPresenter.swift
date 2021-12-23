@@ -9,12 +9,16 @@ import Foundation
 @testable import iTV_Plus
 
 class MockMainPresenter: MainPresenterInterface {
+   
  
     var mainViewModel: MainViewModel?
     var interactor: MainInteractorInterface?
     var wireFrame: MainWireFrameInterface?
     
     func updateViewModel(_ categories: [Categories]) {
-     }
-     
+    }
+    
+    func notifyViewWithError(message: String) {
+    }
+       
 }

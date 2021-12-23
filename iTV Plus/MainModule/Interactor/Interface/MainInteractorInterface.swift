@@ -10,5 +10,7 @@ import Foundation
 protocol MainInteractorInterface {
     var presenter: MainPresenterInterface? { get set }
     var categories: [Categories]! { get set }
-    func loadJSON<T: Codable>( _ data: Data) throws -> T
+    var urlSession: URLSession? { get set }
+    var downloadService: DownloadService? { get set }
+    func loadJSON( _ data: Data, completionHandler: @escaping ([Categories]?, ErrorHandler?) -> Void)
 }

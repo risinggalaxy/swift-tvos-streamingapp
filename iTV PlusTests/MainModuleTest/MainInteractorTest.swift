@@ -25,30 +25,31 @@ class MainInteractorTest: XCTestCase {
         super.tearDown()
     }
     
-    
-    func testMainInteractor_WhenParsingJSON_ShouldReturnTypeShouldNotBeNil() {
+    func testMainInteractor_WhenParsingJSON_ReturnTypeShouldNotBeNil() {
         guard let data = mockJSON else { return }
-        let categories: [Categories] = try! sut.loadJSON(data)
-        XCTAssertNotNil(categories)
+        sut.loadJSON(data) { categories, error in
+            if let receivedCategories = categories {
+                XCTAssertNotNil(receivedCategories)
+                XCTAssertNil(error)
+            }
+        }
     }
     
     func testMainInteractor_WhenParsingBadJSONData_ShouldThrowAnError() {
         guard let data = badJSONData else { return }
-        var categories: [Categories] = []
-        do {
-            categories = try sut.loadJSON(data)
-            XCTAssertThrowsError(categories)
-        } catch {}
+        sut.loadJSON(data) { categories, error in
+            XCTAssertNil(categories)
+            XCTAssertEqual(error, ErrorHandler.failedToParsJSON)
+        }
     }
-    
+
     func testMainInteractor_WhenParsingJSOND_CategoriesArrayShouldNotBeEmpty() {
         XCTAssertTrue(sut.categories.isEmpty)
         guard let data = mockJSON else { return }
-        do {
-            sut.categories = try sut.loadJSON(data)
-            XCTAssertNotNil(sut.categories)
-            XCTAssertTrue(!sut.categories.isEmpty)
-        } catch {}
+        sut.loadJSON(data) { [weak self] categories, error in
+            self?.sut.categories = categories
+            XCTAssertNil(error)
+        }
+        XCTAssertFalse(sut.categories.isEmpty)
     }
-    
 }

@@ -16,4 +16,9 @@ class MainPresenter: MainPresenterInterface {
     func updateViewModel(_ categories: [Categories]) {
         mainViewModel?.categories = categories
     }
+    
+    func notifyViewWithError(message: String) {
+        mainViewModel?.errorMessage = message
+    }
+    
 }
