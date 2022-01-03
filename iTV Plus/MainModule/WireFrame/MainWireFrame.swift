@@ -7,12 +7,16 @@
 
 import Combine
 import SwiftUI
+import AppResources
 
 class MainWireFrame: MainWireFrameInterface {
     
-    static func presentViewController() -> VIEW {
+    static var rootView: VIEW?
+    
+    static func presentViewController(window: UIWindow) -> VIEW {
         let viewModel = MainViewModel()
         let interactor = MainInteractor()
+        viewModel.viewTitle = "Main View"
         let presenter = MainPresenter()
         let wireFrame = MainWireFrame()
         let view = MainView(presenter: presenter, mainViewModel: viewModel).environmentObject(MainEnvironmentalObject())
@@ -21,7 +25,25 @@ class MainWireFrame: MainWireFrameInterface {
         presenter.mainViewModel = viewModel
         presenter.wireFrame = wireFrame
         let mainView = UIHostingController(rootView: view)
+        mainView.title = viewModel.viewTitle
+        MainWireFrame.rootView = mainView
         return mainView
     }
+    
+    
+    func presentChannelView(with channel: Channel) -> Bool {
+        guard let view = MainWireFrame.rootView else { return false}
+        let newView = PlayerWireFrame.presentViewController(with: channel)
+        view.present(newView, animated: true, completion: nil)
+        return true
+    }
+    
+    func presentCategory(with category: Categorie) -> Bool {
+        guard let view = MainWireFrame.rootView else { return false}
+        let newView = ChannelsWireFrame.presentViewController(on: view, channels: category.channels)
+        view.present(newView, animated: true, completion: nil)
+        return true
+    }
+    
     
 }

@@ -37,9 +37,22 @@ class MainPresenterTest: XCTestCase {
     }
     
     func testMainPresenter_WhenCategoriesReceived_ShouldPushCategoriesToViewModel() {
-//        XCTAssertTrue(mockViewModel.categories.isEmpty)
         sut.updateViewModel(FakeCategories.categories)
         XCTAssertFalse(mockViewModel.categories.isEmpty)
     }
     
+    
+    func testMainPresenter_WhenPresentPlayerViewCalled_ShouldPassValuesToMainWireFrame() {
+        
+        sut.presentPlayerView(with: FakeChannels.movieChannels.first!)
+        XCTAssertTrue(mockWireframe.didReceiveChannels)
+        XCTAssertTrue(mockWireframe.didCallPresentChannelView)
+        
+    }
+    
+    func testMainPresenter_WhenPresentCategoryCalled_ShouldPassValuesToMainWireFrame() {
+        sut.presentCategory(with: FakeCategories.categories.first!)
+        XCTAssertTrue(mockWireframe.didReceiveCategory)
+        XCTAssertTrue(mockWireframe.didCallPresentCategoryView)
+    }
 }

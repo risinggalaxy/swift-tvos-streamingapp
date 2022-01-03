@@ -22,4 +22,12 @@ class MainPresenter: MainPresenterInterface {
         mainViewModel?.errorMessage = message
     }
     
+    func presentPlayerView(with channel: Channel) {
+        wireFrame?.presentChannelView(with: channel)
+    }
+    
+    func presentCategory(with category: Categorie) {
+        wireFrame?.presentCategory(with: category)
+    }
+    
 }

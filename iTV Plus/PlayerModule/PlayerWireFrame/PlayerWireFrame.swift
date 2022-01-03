@@ -7,9 +7,11 @@
 
 import Foundation
 import SwiftUI
+import AppResources
 
 class PlayerWireFrame: PlayerWireFrameInterface {
-    static func presentViewController() -> VIEW {
+    
+    static func presentViewController(with channel: Channel) -> VIEW {
         let viewModel = PlayerViewModel()
         let presenter = PlayerPresenter()
         let interactor = PlayerInteractor()
@@ -19,7 +21,9 @@ class PlayerWireFrame: PlayerWireFrameInterface {
         presenter.interactor = interactor
         presenter.viewModel = viewModel
         presenter.wireFrame = wireFrame
+        viewModel.playingChannel = channel
         let playerView = UIHostingController(rootView: view)
         return playerView
     }
+    
 }

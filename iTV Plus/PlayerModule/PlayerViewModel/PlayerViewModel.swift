@@ -7,10 +7,16 @@
 
 import Combine
 import SwiftUI
+import AppResources
 
 class PlayerViewModel: ObservableObject, PlayerViewModelInterface {
     
     let objectWillChange = ObservableObjectPublisher()
     
+    var playingChannel: Channel? {
+        willSet {
+            self.objectWillChange.send()
+        }
+    }
 }
 

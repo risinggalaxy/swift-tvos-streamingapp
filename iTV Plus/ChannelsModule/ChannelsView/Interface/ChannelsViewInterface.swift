@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import AppResources
 
 protocol ChannelsViewInterface {
     var presenter: ChannelsPresenterInterface? { get set }
+    func provideChannels(from channels: [Channel]?) throws -> [Channel]
 }

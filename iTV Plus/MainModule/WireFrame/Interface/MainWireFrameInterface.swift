@@ -7,11 +7,14 @@
 
 import Foundation
 import UIKit
+import AppResources
 
 typealias VIEW = UIViewController
 
 protocol MainWireFrameInterface {
     
-    static func presentViewController() -> VIEW
-    
+    static var rootView: VIEW? { get set }
+    static func presentViewController(window: UIWindow) -> VIEW
+    @discardableResult func presentChannelView(with channel: Channel) -> Bool
+    @discardableResult func presentCategory(with category: Categorie) -> Bool
 }

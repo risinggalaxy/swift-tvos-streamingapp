@@ -15,5 +15,7 @@ protocol MainPresenterInterface {
     var wireFrame: MainWireFrameInterface? { get set }
     func updateViewModel( _ categories: [Categorie] )
     func notifyViewWithError(message: String)
+    func presentPlayerView(with channel: Channel)
+    func presentCategory(with category: Categorie)
     
 }

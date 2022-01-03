@@ -6,8 +6,13 @@
 //
 
 import Foundation
+import UIKit
+import AppResources
+
 protocol ChannelsWireFrameInterface {
     
-    static func presentViewController() -> VIEW
+    static var rootView: VIEW? { get set }
+    static func presentViewController(on view: VIEW, channels: [Channel]) -> VIEW
+    func presentPlayer(with channel: Channel) throws
     
 }

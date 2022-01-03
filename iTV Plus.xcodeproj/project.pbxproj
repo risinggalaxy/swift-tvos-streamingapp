@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		73167D802774CBE3009B71DA /* CellDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73167D7F2774CBE3009B71DA /* CellDesign.swift */; };
+		73108D11278069E2006D2C41 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73108D10278069E2006D2C41 /* ViewExtensions.swift */; };
+		73167D802774CBE3009B71DA /* CategoryCellDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73167D7F2774CBE3009B71DA /* CategoryCellDesign.swift */; };
 		734E54C02774C218005D8FE2 /* AppResources in Frameworks */ = {isa = PBXBuildFile; productRef = 734E54BF2774C218005D8FE2 /* AppResources */; };
 		736D641A27731F0300E61A9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736D641927731F0300E61A9D /* Assets.xcassets */; };
 		736D641D27731F0300E61A9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736D641C27731F0300E61A9D /* Preview Assets.xcassets */; };
@@ -55,6 +56,18 @@
 		737B5713277462C1006B231E /* DownloadServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737B5712277462C1006B231E /* DownloadServiceTest.swift */; };
 		737B571527746315006B231E /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737B571427746315006B231E /* DownloadService.swift */; };
 		737B5718277465C0006B231E /* DownloadServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737B5717277465C0006B231E /* DownloadServiceInterface.swift */; };
+		7397B810277B409F00682178 /* MainWireFrameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7397B80F277B409F00682178 /* MainWireFrameTest.swift */; };
+		73C3D51527836511009BBC10 /* TestChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3D51427836511009BBC10 /* TestChannelsView.swift */; };
+		73C3D517278365DB009BBC10 /* MockChannelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3D516278365DB009BBC10 /* MockChannelPresenter.swift */; };
+		73C3D51927836642009BBC10 /* MockChannelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3D51827836642009BBC10 /* MockChannelViewModel.swift */; };
+		73C3D51B27836A40009BBC10 /* TestChannelsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3D51A27836A40009BBC10 /* TestChannelsPresenter.swift */; };
+		73C3D51D27836B27009BBC10 /* MockChannelsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3D51C27836B27009BBC10 /* MockChannelsInteractor.swift */; };
+		73C3D51F27836B63009BBC10 /* MockChannelsWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3D51E27836B63009BBC10 /* MockChannelsWireFrame.swift */; };
+		73C3D5212783704A009BBC10 /* TestChannelsWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3D5202783704A009BBC10 /* TestChannelsWireFrame.swift */; };
+		73C3D5232783711B009BBC10 /* MockChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3D5222783711B009BBC10 /* MockChannelView.swift */; };
+		73F368AF27831F8A006CCD0B /* PlayerViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F368AE27831F8A006CCD0B /* PlayerViewTest.swift */; };
+		73F368B1278322C9006CCD0B /* MockPlayerModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F368B0278322C9006CCD0B /* MockPlayerModulePresenter.swift */; };
+		73F368B327832303006CCD0B /* MockPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F368B227832303006CCD0B /* MockPlayerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +81,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		73167D7F2774CBE3009B71DA /* CellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDesign.swift; sourceTree = "<group>"; };
+		73108D10278069E2006D2C41 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		73167D7F2774CBE3009B71DA /* CategoryCellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellDesign.swift; sourceTree = "<group>"; };
 		734E54BE2774C209005D8FE2 /* AppResources */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AppResources; path = ../AppResources; sourceTree = "<group>"; };
 		736D641227731F0100E61A9D /* iTV Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTV Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		736D641927731F0300E61A9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +133,18 @@
 		737B5712277462C1006B231E /* DownloadServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadServiceTest.swift; sourceTree = "<group>"; };
 		737B571427746315006B231E /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 		737B5717277465C0006B231E /* DownloadServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadServiceInterface.swift; sourceTree = "<group>"; };
+		7397B80F277B409F00682178 /* MainWireFrameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireFrameTest.swift; sourceTree = "<group>"; };
+		73C3D51427836511009BBC10 /* TestChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChannelsView.swift; sourceTree = "<group>"; };
+		73C3D516278365DB009BBC10 /* MockChannelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelPresenter.swift; sourceTree = "<group>"; };
+		73C3D51827836642009BBC10 /* MockChannelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelViewModel.swift; sourceTree = "<group>"; };
+		73C3D51A27836A40009BBC10 /* TestChannelsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChannelsPresenter.swift; sourceTree = "<group>"; };
+		73C3D51C27836B27009BBC10 /* MockChannelsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelsInteractor.swift; sourceTree = "<group>"; };
+		73C3D51E27836B63009BBC10 /* MockChannelsWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelsWireFrame.swift; sourceTree = "<group>"; };
+		73C3D5202783704A009BBC10 /* TestChannelsWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChannelsWireFrame.swift; sourceTree = "<group>"; };
+		73C3D5222783711B009BBC10 /* MockChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelView.swift; sourceTree = "<group>"; };
+		73F368AE27831F8A006CCD0B /* PlayerViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewTest.swift; sourceTree = "<group>"; };
+		73F368B0278322C9006CCD0B /* MockPlayerModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlayerModulePresenter.swift; sourceTree = "<group>"; };
+		73F368B227832303006CCD0B /* MockPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlayerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +166,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73108D0F278069CD006D2C41 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				73108D10278069E2006D2C41 /* ViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		736D640927731F0100E61A9D = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +197,7 @@
 		736D641427731F0100E61A9D /* iTV Plus */ = {
 			isa = PBXGroup;
 			children = (
+				73108D0F278069CD006D2C41 /* Extensions */,
 				736D647E27732A3400E61A9D /* MainModule */,
 				736D647F27732A3D00E61A9D /* ChannelsModule */,
 				736D648027732A4D00E61A9D /* PlayerModule */,
@@ -185,6 +220,7 @@
 		736D642527731F0300E61A9D /* iTV PlusTests */ = {
 			isa = PBXGroup;
 			children = (
+				7397B811277B4D6E00682178 /* ChannelsModule */,
 				736D648227732A7500E61A9D /* MainModuleTest */,
 				736D648427732A8900E61A9D /* PlayerModuleTest */,
 				736D648527732A9500E61A9D /* SettingsModuleTest */,
@@ -257,8 +293,9 @@
 			children = (
 				736D650B27736CE500E61A9D /* MainInteractorTest.swift */,
 				736D651627737C2500E61A9D /* MainPresenterTest.swift */,
-				736D650D27736DAA00E61A9D /* Mock */,
 				736D651E277380E700E61A9D /* MainViewModelTest.swift */,
+				7397B80F277B409F00682178 /* MainWireFrameTest.swift */,
+				736D650D27736DAA00E61A9D /* Mock */,
 			);
 			path = MainModuleTest;
 			sourceTree = "<group>";
@@ -266,6 +303,9 @@
 		736D648427732A8900E61A9D /* PlayerModuleTest */ = {
 			isa = PBXGroup;
 			children = (
+				73F368AE27831F8A006CCD0B /* PlayerViewTest.swift */,
+				73F368B0278322C9006CCD0B /* MockPlayerModulePresenter.swift */,
+				73F368B227832303006CCD0B /* MockPlayerViewModel.swift */,
 			);
 			path = PlayerModuleTest;
 			sourceTree = "<group>";
@@ -306,7 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				736D648C27732B3400E61A9D /* MainView.swift */,
-				73167D7F2774CBE3009B71DA /* CellDesign.swift */,
+				73167D7F2774CBE3009B71DA /* CategoryCellDesign.swift */,
 				736D648A27732B1A00E61A9D /* Interface */,
 			);
 			path = View;
@@ -653,6 +693,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7397B811277B4D6E00682178 /* ChannelsModule */ = {
+			isa = PBXGroup;
+			children = (
+				73C3D51427836511009BBC10 /* TestChannelsView.swift */,
+				73C3D516278365DB009BBC10 /* MockChannelPresenter.swift */,
+				73C3D51827836642009BBC10 /* MockChannelViewModel.swift */,
+				73C3D51A27836A40009BBC10 /* TestChannelsPresenter.swift */,
+				73C3D51C27836B27009BBC10 /* MockChannelsInteractor.swift */,
+				73C3D51E27836B63009BBC10 /* MockChannelsWireFrame.swift */,
+				73C3D5202783704A009BBC10 /* TestChannelsWireFrame.swift */,
+				73C3D5222783711B009BBC10 /* MockChannelView.swift */,
+			);
+			path = ChannelsModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -760,10 +815,11 @@
 				736D64DB277337EF00E61A9D /* ChannelsWireFrame.swift in Sources */,
 				736D64EF27733C4C00E61A9D /* PlayerWireFrame.swift in Sources */,
 				736D64E727733C1D00E61A9D /* PlayerInteractor.swift in Sources */,
-				73167D802774CBE3009B71DA /* CellDesign.swift in Sources */,
+				73167D802774CBE3009B71DA /* CategoryCellDesign.swift in Sources */,
 				736D644127731F9F00E61A9D /* AppDelegate.swift in Sources */,
 				736D64E12773381C00E61A9D /* ChannelsViewModelInterface.swift in Sources */,
 				736D64E927733C2400E61A9D /* PlayerInteractorInterface.swift in Sources */,
+				73108D11278069E2006D2C41 /* ViewExtensions.swift in Sources */,
 				736D64ED27733C3B00E61A9D /* PlayerPresenterInterface.swift in Sources */,
 				736D64B42773357C00E61A9D /* ChannelsView.swift in Sources */,
 				736D64CA2773364300E61A9D /* SettingsView.swift in Sources */,
@@ -800,15 +856,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C3D5212783704A009BBC10 /* TestChannelsWireFrame.swift in Sources */,
 				736D651927737C9F00E61A9D /* MockViewModel.swift in Sources */,
 				736D650C27736CE500E61A9D /* MainInteractorTest.swift in Sources */,
 				736D650F27736DAF00E61A9D /* MockMainPresenter.swift in Sources */,
+				7397B810277B409F00682178 /* MainWireFrameTest.swift in Sources */,
+				73C3D51927836642009BBC10 /* MockChannelViewModel.swift in Sources */,
+				73F368B327832303006CCD0B /* MockPlayerViewModel.swift in Sources */,
 				736D651B27737CAA00E61A9D /* MockView.swift in Sources */,
 				737B5713277462C1006B231E /* DownloadServiceTest.swift in Sources */,
+				73C3D51D27836B27009BBC10 /* MockChannelsInteractor.swift in Sources */,
 				736D651D27737DE200E61A9D /* MockMainWireFrame.swift in Sources */,
 				736D651F277380E700E61A9D /* MainViewModelTest.swift in Sources */,
+				73C3D517278365DB009BBC10 /* MockChannelPresenter.swift in Sources */,
 				736D65152773792200E61A9D /* MockMainInteractor.swift in Sources */,
 				736D651727737C2500E61A9D /* MainPresenterTest.swift in Sources */,
+				73F368AF27831F8A006CCD0B /* PlayerViewTest.swift in Sources */,
+				73C3D51F27836B63009BBC10 /* MockChannelsWireFrame.swift in Sources */,
+				73C3D51527836511009BBC10 /* TestChannelsView.swift in Sources */,
+				73C3D5232783711B009BBC10 /* MockChannelView.swift in Sources */,
+				73F368B1278322C9006CCD0B /* MockPlayerModulePresenter.swift in Sources */,
+				73C3D51B27836A40009BBC10 /* TestChannelsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

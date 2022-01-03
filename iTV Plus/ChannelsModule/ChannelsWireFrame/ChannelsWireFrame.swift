@@ -7,10 +7,13 @@
 
 import Combine
 import SwiftUI
+import AppResources
 
 class ChannelsWireFrame: ChannelsWireFrameInterface {
     
-    static func presentViewController() -> VIEW {
+    static var rootView: VIEW?
+    
+    static func presentViewController(on view: VIEW, channels: [Channel]) -> VIEW {
         let viewModel = ChannelsViewModel()
         let presenter = ChannelsPresenter()
         let interactor = ChannelsInteractor()
@@ -20,8 +23,18 @@ class ChannelsWireFrame: ChannelsWireFrameInterface {
         presenter.interactor = interactor
         presenter.wireFrame = wireFrame
         presenter.channelsViewModel = viewModel
+        viewModel.channels = channels
         let channelsView = UIHostingController(rootView: view)
+        ChannelsWireFrame.rootView = channelsView
         return channelsView
+    }
+    
+    func presentPlayer(with channel: Channel) throws {
+        guard let view = ChannelsWireFrame.rootView else {
+            throw ErrorHandler.noParentViewWasFound
+        }
+        let playerView  = PlayerWireFrame.presentViewController(with: channel)
+        view.present(playerView, animated: true, completion: nil)
     }
     
 }

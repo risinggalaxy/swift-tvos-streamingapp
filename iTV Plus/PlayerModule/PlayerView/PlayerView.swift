@@ -6,15 +6,39 @@
 //
 
 import SwiftUI
+import AVKit
+import AppResources
 
 struct PlayerView: View, PlayerViewInterface {
     
-    var presenter: PlayerPresenter?
-    
+    var presenter: PlayerPresenterInterface?
     @ObservedObject var viewModel: PlayerViewModel
+    var screen = UIScreen.main.bounds
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            VideoPlayer(player: AVPlayer(url:try! channelUrl(from: playingChannel(viewModel.playingChannel).url)))
+                .frame(width: screen.width, height: screen.height, alignment: .center)
+            VStack(alignment: .leading, spacing: 10) {
+                Text(try! playingChannel(viewModel.playingChannel).title)
+                    .font(.system(size: 30, weight: .bold, design: .default))
+                Spacer()
+            }
+        }
+    }
+    
+    internal func playingChannel( _ channel: Channel?) throws -> Channel {
+        guard let outputChannel = channel else {
+            throw ErrorHandler.invalidChannel
+        }
+        return outputChannel
+    }
+    
+    internal func channelUrl( from string: String) throws -> URL {
+        guard let url = URL(string: string) else {
+            throw ErrorHandler.failedToLoadURL
+        }
+        return url
     }
 }
 

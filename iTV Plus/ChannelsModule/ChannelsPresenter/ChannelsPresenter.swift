@@ -6,11 +6,20 @@
 //
 
 import Foundation
+import AppResources
 
 class ChannelsPresenter: ChannelsPresenterInterface {
-    
+
     weak var channelsViewModel: ChannelsViewModel?
     var interactor: ChannelsInteractorInterface?
-    var wireFrame: ChannelsWireFrame?
+    var wireFrame: ChannelsWireFrameInterface?
+    
+    func presentCategory(with channel: Channel) throws {
+        do {
+            try wireFrame?.presentPlayer(with: channel)
+        } catch let error {
+            throw ErrorHandler.failedRequest(description: error.localizedDescription)
+        }
+    }
     
 }

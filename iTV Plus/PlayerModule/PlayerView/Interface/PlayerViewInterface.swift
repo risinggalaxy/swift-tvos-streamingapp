@@ -6,7 +6,10 @@
 //
 
 import Foundation
+import AppResources
 
 protocol PlayerViewInterface {
-    var presenter: PlayerPresenter? { get set }
+    var presenter: PlayerPresenterInterface? { get set }
+    func playingChannel( _ channel: Channel?) throws -> Channel
+    func channelUrl( from string: String) throws -> URL
 }

@@ -9,41 +9,38 @@ import SwiftUI
 import AppResources
 import AVFoundation
 
-struct CellDesign: View {
+struct CategoryCellDesign: View {
     
     var category: Categorie
     
     var body: some View {
         
         ZStack {
-            
-            RoundedRectangle(cornerRadius: 25)
+            RoundedRectangle(cornerRadius: 10)
+                .background(.clear)
                 .frame(width: 350, height: 220, alignment: .center)
                 .overlay {
                     VStack(spacing: 10) {
                         Circle()
                             .frame(width: 100, height: 100, alignment: .center)
-                            .foregroundColor(.orange)
+                            .foregroundColor(.clear)
                             .overlay {
-                                Text("\(category.id)")
+                                Text("\(category.image)")
                                     .font(.system(size: 50, weight: .bold, design: .default))
                             }
                             .clipped()
                         Text(category.title)
                         .font(.system(size: 35, weight: .bold, design: .default))
-                        .foregroundColor(.black)
+                        
                     }
                 }
                 .clipped()
         }
-        
-        
     }
-    
 }
 
 struct CellDesign_Previews: PreviewProvider {
     static var previews: some View {
-        CellDesign(category: FakeCategories.categories.first!)
+        CategoryCellDesign(category: FakeCategories.categories.first!)
     }
 }

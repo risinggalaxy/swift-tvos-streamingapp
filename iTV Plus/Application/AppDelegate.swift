@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     internal func setupFirstView() {
         let uiWindow = UIWindow(frame: UIScreen.main.coordinateSpace.bounds)
         window = uiWindow
-        let view = MainWireFrame.presentViewController()
+        let view = MainWireFrame.presentViewController(window: uiWindow)
         uiWindow.rootViewController = view
         uiWindow.makeKeyAndVisible()
     }

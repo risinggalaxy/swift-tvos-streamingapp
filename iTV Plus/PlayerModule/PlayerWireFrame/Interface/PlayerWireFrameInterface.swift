@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import AppResources
 
 protocol PlayerWireFrameInterface {
-    static func presentViewController() -> VIEW
+    static func presentViewController(with channel: Channel) -> VIEW
 }

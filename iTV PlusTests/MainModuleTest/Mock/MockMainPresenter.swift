@@ -11,8 +11,7 @@ import AppResources
 @testable import iTV_Plus
 
 class MockMainPresenter: MainPresenterInterface {
-   
- 
+
     var mainViewModel: MainViewModel?
     var interactor: MainInteractorInterface?
     var wireFrame: MainWireFrameInterface?
@@ -23,4 +22,10 @@ class MockMainPresenter: MainPresenterInterface {
     func notifyViewWithError(message: String) {
     }
        
+    func presentPlayerView(with channel: Channel) {
+    }
+    
+    func presentCategory(with category: Categorie) {
+    }
+
 }

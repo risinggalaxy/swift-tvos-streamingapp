@@ -12,6 +12,7 @@ import AppResources
 class MainViewModel: ObservableObject, MainViewModelInterface {
     
     let objectWillChange: ObservableObjectPublisher = ObservableObjectPublisher()
+    var viewTitle: String?
     
     @Published var categories: [Categorie] = FakeCategories.categories {
         didSet {
