@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AppResources",
+        "repositoryURL": "https://github.com/risinggalaxy/AppResources",
+        "state": {
+          "branch": null,
+          "revision": "0ec92739ec9c0250c4452fbde1af2c18894845df",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
