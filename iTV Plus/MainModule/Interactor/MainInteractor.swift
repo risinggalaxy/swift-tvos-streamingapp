@@ -13,7 +13,7 @@ class MainInteractor: MainInteractorInterface {
     var urlSession: URLSession?
     var presenter: MainPresenterInterface?
     var downloadService: DownloadService?
-    var categories: [Categories]! = [] {
+    var categories: [ITVCategory]! = [] {
         didSet {
             presenter?.updateViewModel(categories)
         }
@@ -43,10 +43,10 @@ class MainInteractor: MainInteractorInterface {
         }
     }
     
-    func loadJSON( _ data: Data, completionHandler: @escaping ([Categories]?, ErrorHandler?) -> Void) {
+    func loadJSON( _ data: Data, completionHandler: @escaping ([ITVCategory]?, ErrorHandler?) -> Void) {
         let decoder = JSONDecoder()
         do {
-            let decodedData = try decoder.decode([Categories].self, from: data)
+            let decodedData = try decoder.decode([ITVCategory].self, from: data)
             completionHandler(decodedData, nil)
         } catch {
             completionHandler(nil, ErrorHandler.failedToParsJSON)

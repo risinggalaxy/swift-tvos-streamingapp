@@ -33,7 +33,7 @@ class MockMainWireFrame: MainWireFrameInterface {
         return didCallPresentChannelView
     }
     
-    func presentCategory(with category: Categories) -> Bool {
+    func presentCategory(with category: ITVCategory) -> Bool {
         if !category.channels.isEmpty {
             didReceiveCategory = true
         }

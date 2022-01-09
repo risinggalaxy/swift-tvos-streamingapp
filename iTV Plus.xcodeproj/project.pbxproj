@@ -67,7 +67,7 @@
 		73C3D5212783704A009BBC10 /* TestChannelsWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3D5202783704A009BBC10 /* TestChannelsWireFrame.swift */; };
 		73C3D5232783711B009BBC10 /* MockChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3D5222783711B009BBC10 /* MockChannelView.swift */; };
 		73EBD9BF278B3DE100E74BE3 /* AppResources in Frameworks */ = {isa = PBXBuildFile; productRef = 73EBD9BE278B3DE100E74BE3 /* AppResources */; };
-		73EBD9C2278B3E2300E74BE3 /* AppResources in Frameworks */ = {isa = PBXBuildFile; productRef = 73EBD9C1278B3E2300E74BE3 /* AppResources */; };
+		73EBD9D4278B462700E74BE3 /* AppResources in Frameworks */ = {isa = PBXBuildFile; productRef = 73EBD9D3278B462700E74BE3 /* AppResources */; };
 		73F368AF27831F8A006CCD0B /* PlayerViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F368AE27831F8A006CCD0B /* PlayerViewTest.swift */; };
 		73F368B1278322C9006CCD0B /* MockPlayerModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F368B0278322C9006CCD0B /* MockPlayerModulePresenter.swift */; };
 		73F368B327832303006CCD0B /* MockPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F368B227832303006CCD0B /* MockPlayerViewModel.swift */; };
@@ -147,7 +147,6 @@
 		73C3D51E27836B63009BBC10 /* MockChannelsWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelsWireFrame.swift; sourceTree = "<group>"; };
 		73C3D5202783704A009BBC10 /* TestChannelsWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChannelsWireFrame.swift; sourceTree = "<group>"; };
 		73C3D5222783711B009BBC10 /* MockChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChannelView.swift; sourceTree = "<group>"; };
-		73EBD9BD278B3DC400E74BE3 /* AppResources */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AppResources; path = ../../../Desktop/AppResources; sourceTree = "<group>"; };
 		73F368AE27831F8A006CCD0B /* PlayerViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewTest.swift; sourceTree = "<group>"; };
 		73F368B0278322C9006CCD0B /* MockPlayerModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlayerModulePresenter.swift; sourceTree = "<group>"; };
 		73F368B227832303006CCD0B /* MockPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlayerViewModel.swift; sourceTree = "<group>"; };
@@ -159,7 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73EBD9C2278B3E2300E74BE3 /* AppResources in Frameworks */,
+				73EBD9D4278B462700E74BE3 /* AppResources in Frameworks */,
 				73EBD9BF278B3DE100E74BE3 /* AppResources in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,7 +192,6 @@
 		736D640927731F0100E61A9D = {
 			isa = PBXGroup;
 			children = (
-				73EBD9BC278B3DC400E74BE3 /* Packages */,
 				736D641427731F0100E61A9D /* iTV Plus */,
 				736D642527731F0300E61A9D /* iTV PlusTests */,
 				736D641327731F0100E61A9D /* Products */,
@@ -727,14 +725,6 @@
 			path = ChannelsModule;
 			sourceTree = "<group>";
 		};
-		73EBD9BC278B3DC400E74BE3 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				73EBD9BD278B3DC400E74BE3 /* AppResources */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -753,7 +743,7 @@
 			name = "iTV Plus";
 			packageProductDependencies = (
 				73EBD9BE278B3DE100E74BE3 /* AppResources */,
-				73EBD9C1278B3E2300E74BE3 /* AppResources */,
+				73EBD9D3278B462700E74BE3 /* AppResources */,
 			);
 			productName = "iTV Plus";
 			productReference = 736D641227731F0100E61A9D /* iTV Plus.app */;
@@ -807,7 +797,7 @@
 			);
 			mainGroup = 736D640927731F0100E61A9D;
 			packageReferences = (
-				73EBD9C0278B3E2300E74BE3 /* XCRemoteSwiftPackageReference "AppResources" */,
+				73EBD9D2278B462700E74BE3 /* XCRemoteSwiftPackageReference "AppResources" */,
 			);
 			productRefGroup = 736D641327731F0100E61A9D /* Products */;
 			projectDirPath = "";
@@ -1181,12 +1171,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		73EBD9C0278B3E2300E74BE3 /* XCRemoteSwiftPackageReference "AppResources" */ = {
+		73EBD9D2278B462700E74BE3 /* XCRemoteSwiftPackageReference "AppResources" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/risinggalaxy/AppResources";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = exactVersion;
+				version = 1.1.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -1196,9 +1186,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = AppResources;
 		};
-		73EBD9C1278B3E2300E74BE3 /* AppResources */ = {
+		73EBD9D3278B462700E74BE3 /* AppResources */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 73EBD9C0278B3E2300E74BE3 /* XCRemoteSwiftPackageReference "AppResources" */;
+			package = 73EBD9D2278B462700E74BE3 /* XCRemoteSwiftPackageReference "AppResources" */;
 			productName = AppResources;
 		};
 /* End XCSwiftPackageProductDependency section */

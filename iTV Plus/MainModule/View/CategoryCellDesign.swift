@@ -11,7 +11,7 @@ import AVFoundation
 
 struct CategoryCellDesign: View {
     
-    var category: Categories
+    var category: ITVCategory
     
     var body: some View {
         

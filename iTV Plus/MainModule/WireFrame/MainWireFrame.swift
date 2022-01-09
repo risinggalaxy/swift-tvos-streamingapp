@@ -40,7 +40,7 @@ class MainWireFrame: MainWireFrameInterface {
         return true
     }
     
-    func presentCategory(with category: Categories) -> Bool {
+    func presentCategory(with category: ITVCategory) -> Bool {
         guard let view = MainWireFrame.rootView else { return false}
         let newView = ChannelsWireFrame.presentViewController(on: view, parentCategory: (category.title, category.icon), channels: category.channels)
         view.present(newView, animated: true, completion: nil)

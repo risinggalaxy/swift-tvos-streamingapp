@@ -10,8 +10,8 @@ import AppResources
 
 protocol MainInteractorInterface {
     var presenter: MainPresenterInterface? { get set }
-    var categories: [Categories]! { get set }
+    var categories: [ITVCategory]! { get set }
     var urlSession: URLSession? { get set }
     var downloadService: DownloadService? { get set }
-    func loadJSON( _ data: Data, completionHandler: @escaping ([Categories]?, ErrorHandler?) -> Void)
+    func loadJSON( _ data: Data, completionHandler: @escaping ([ITVCategory]?, ErrorHandler?) -> Void)
 }

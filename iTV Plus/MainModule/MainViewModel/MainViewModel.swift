@@ -14,7 +14,7 @@ class MainViewModel: ObservableObject, MainViewModelInterface {
     let objectWillChange: ObservableObjectPublisher = ObservableObjectPublisher()
     var viewTitle: String?
     
-    @Published var categories: [Categories] = [] {
+    @Published var categories: [ITVCategory] = [] {
         didSet {
             DispatchQueue.main.async { [weak self] in
                 self?.objectWillChange.send()

@@ -24,7 +24,7 @@ struct PlayerView: View, PlayerViewInterface {
     
     internal func playingChannel( _ channel: Channel?) throws -> Channel {
         guard let outputChannel = channel else {
-            throw ErrorHandler.invalidChannel
+            throw ErrorHandler.invalidChannelList
         }
         return outputChannel
     }

@@ -11,7 +11,7 @@ import AppResources
 
 protocol MainViewModelInterface {
     
-    var categories: [Categories] { get set }
+    var categories: [ITVCategory] { get set }
     var viewTitle: String? { get set }
     
 }
