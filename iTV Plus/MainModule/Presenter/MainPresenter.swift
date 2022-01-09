@@ -14,7 +14,7 @@ class MainPresenter: MainPresenterInterface {
     var interactor: MainInteractorInterface?
     var wireFrame: MainWireFrameInterface?
     
-    func updateViewModel(_ categories: [Categorie]) {
+    func updateViewModel(_ categories: [Categories]) {
         mainViewModel?.categories = categories
     }
     
@@ -26,7 +26,7 @@ class MainPresenter: MainPresenterInterface {
         wireFrame?.presentChannelView(with: channel)
     }
     
-    func presentCategory(with category: Categorie) {
+    func presentCategory(with category: Categories) {
         wireFrame?.presentCategory(with: category)
     }
     

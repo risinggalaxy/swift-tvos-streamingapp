@@ -37,7 +37,7 @@ class TestChannelsPresenter: XCTestCase {
     
     func testChannelsPresenter_WhenChannelsProvided_ShouldNotThrowAnError() {
         let stringValue = "One"
-        let channel = Channel(id: 0, title: stringValue, image: stringValue, url: stringValue)
+        let channel = Channel(id: 0, title: stringValue, color: stringValue, url: stringValue)
         XCTAssertNoThrow(try! sut.presentCategory(with: channel))
     }
     

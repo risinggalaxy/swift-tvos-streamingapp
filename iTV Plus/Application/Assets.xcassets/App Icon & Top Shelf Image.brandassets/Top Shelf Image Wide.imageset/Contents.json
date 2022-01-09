@@ -1,10 +1,12 @@
 {
   "images" : [
     {
+      "filename" : "iTVTopshelfSmall.png",
       "idiom" : "tv",
       "scale" : "1x"
     },
     {
+      "filename" : "iTVTopShelBig.png",
       "idiom" : "tv",
       "scale" : "2x"
     },

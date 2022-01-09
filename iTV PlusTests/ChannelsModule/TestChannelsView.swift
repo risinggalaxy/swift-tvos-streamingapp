@@ -19,7 +19,7 @@ class TestChannelsView: XCTestCase {
     override func setUp() {
         mockPresenter = MockChannelPresenter()
         mockViewModel = MockChannelViewModel()
-        sut = ChannelsView(presenter: mockPresenter, viewModel: mockViewModel)
+        sut = ChannelsView(presenter: mockPresenter, viewModel: mockViewModel, parentCategory: ("Test", "❤️"))
         super.setUp()
     }
     
@@ -32,14 +32,14 @@ class TestChannelsView: XCTestCase {
     
     func testChannelView_WhenChannelsReceived_ReturningResultShouldNotBeNil() {
         let testString = "One"
-        let channels = [Channel(id: 0, title: testString, image: testString, url: testString)]
+        let channels = [Channel(id: 0, title: testString, color: testString, url: testString)]
         let result = try! sut.provideChannels(from: channels)
         XCTAssertNotNil(result)
         XCTAssertEqual(result.count, 1)
         guard let firstChannel = channels.first else { return }
         XCTAssertEqual(firstChannel.id, 0)
         XCTAssertEqual(firstChannel.title, testString)
-        XCTAssertEqual(firstChannel.image, testString)
+        XCTAssertEqual(firstChannel.color, testString)
         XCTAssertEqual(firstChannel.url, testString)
         
     }

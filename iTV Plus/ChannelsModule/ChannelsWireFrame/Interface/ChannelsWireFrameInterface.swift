@@ -12,7 +12,7 @@ import AppResources
 protocol ChannelsWireFrameInterface {
     
     static var rootView: VIEW? { get set }
-    static func presentViewController(on view: VIEW, channels: [Channel]) -> VIEW
+    static func presentViewController(on view: VIEW, parentCategory: (title: String, icon: String), channels: [Channel]) -> VIEW
     func presentPlayer(with channel: Channel) throws
     
 }

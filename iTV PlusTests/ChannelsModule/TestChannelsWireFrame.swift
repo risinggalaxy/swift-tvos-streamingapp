@@ -29,14 +29,14 @@ class TestChannelsWireFrame: XCTestCase {
         let mockPresenter = MockChannelPresenter()
         let mockChannelView = MockChannelsView(presenter: mockPresenter, viewModel: ChannelsViewModel())
         ChannelsWireFrame.rootView = UIHostingController(rootView: mockChannelView)
-        let channel = Channel(id: 0, title: stringValue, image: stringValue, url: stringValue)
+        let channel = Channel(id: 0, title: stringValue, color: stringValue, url: stringValue)
         XCTAssertNoThrow(try sut.presentPlayer(with: channel))
         
     }
     
     func testChannelsWireFrame_WhenNoParentViewSet_ShouldThrowAnError() {
         let stringValue = "One"
-        let channel = Channel(id: 0, title: stringValue, image: stringValue, url: stringValue)
+        let channel = Channel(id: 0, title: stringValue, color: stringValue, url: stringValue)
         ChannelsWireFrame.rootView = nil
         XCTAssertThrowsError(try sut.presentPlayer(with: channel))
         do {

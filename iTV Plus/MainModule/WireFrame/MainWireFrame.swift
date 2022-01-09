@@ -14,6 +14,8 @@ class MainWireFrame: MainWireFrameInterface {
     static var rootView: VIEW?
     
     static func presentViewController(window: UIWindow) -> VIEW {
+        //Clear Cache At Every App Launch
+        StorageHandler.clear(.cache)
         let viewModel = MainViewModel()
         let interactor = MainInteractor()
         viewModel.viewTitle = "Main View"
@@ -38,9 +40,9 @@ class MainWireFrame: MainWireFrameInterface {
         return true
     }
     
-    func presentCategory(with category: Categorie) -> Bool {
+    func presentCategory(with category: Categories) -> Bool {
         guard let view = MainWireFrame.rootView else { return false}
-        let newView = ChannelsWireFrame.presentViewController(on: view, channels: category.channels)
+        let newView = ChannelsWireFrame.presentViewController(on: view, parentCategory: (category.title, category.icon), channels: category.channels)
         view.present(newView, animated: true, completion: nil)
         return true
     }

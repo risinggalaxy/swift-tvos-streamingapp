@@ -16,7 +16,7 @@ class MockMainPresenter: MainPresenterInterface {
     var interactor: MainInteractorInterface?
     var wireFrame: MainWireFrameInterface?
     
-    func updateViewModel(_ categories: [Categorie]) {
+    func updateViewModel(_ categories: [Categories]) {
     }
     
     func notifyViewWithError(message: String) {
@@ -25,7 +25,7 @@ class MockMainPresenter: MainPresenterInterface {
     func presentPlayerView(with channel: Channel) {
     }
     
-    func presentCategory(with category: Categorie) {
+    func presentCategory(with category: Categories) {
     }
 
 }

@@ -30,12 +30,12 @@ class PlayerViewTest: XCTestCase {
     }
     
     func testPlayerView_WhenReceivesValidChannel_ShouldUnwrapAndReturnChannel() {
-        let channel = Channel(id: 0, title: "One", image: "One", url: "One")
+        let channel = Channel(id: 0, title: "One", color: "One", url: "One")
         let result = try! sut.playingChannel(channel)
         XCTAssertNotNil(result)
         XCTAssertEqual(result.id, channel.id)
         XCTAssertEqual(result.title, channel.title)
-        XCTAssertEqual(result.image, channel.image)
+        XCTAssertEqual(result.color, channel.color)
         XCTAssertEqual(result.url, channel.url)
     }
     

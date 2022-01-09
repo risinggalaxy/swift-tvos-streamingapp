@@ -19,11 +19,6 @@ struct PlayerView: View, PlayerViewInterface {
         ZStack {
             VideoPlayer(player: AVPlayer(url:try! channelUrl(from: playingChannel(viewModel.playingChannel).url)))
                 .frame(width: screen.width, height: screen.height, alignment: .center)
-            VStack(alignment: .leading, spacing: 10) {
-                Text(try! playingChannel(viewModel.playingChannel).title)
-                    .font(.system(size: 30, weight: .bold, design: .default))
-                Spacer()
-            }
         }
     }
     

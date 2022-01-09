@@ -11,31 +11,26 @@ import AVFoundation
 
 struct CategoryCellDesign: View {
     
-    var category: Categorie
+    var category: Categories
     
     var body: some View {
         
         ZStack {
             RoundedRectangle(cornerRadius: 10)
-                .background(.clear)
-                .frame(width: 350, height: 220, alignment: .center)
+                .foregroundColor(Color(UIColor(named: "cellBGColor") ?? .white))
+                .modifier(MyChannelBackgroundFrame())
                 .overlay {
-                    VStack(spacing: 10) {
-                        Circle()
-                            .frame(width: 100, height: 100, alignment: .center)
-                            .foregroundColor(.clear)
-                            .overlay {
-                                Text("\(category.image)")
-                                    .font(.system(size: 50, weight: .bold, design: .default))
-                            }
-                            .clipped()
+                    VStack(spacing: 20) {
+                        Spacer()
+                        Text(category.icon)
+                            .font(.system(size: 50))
                         Text(category.title)
-                        .font(.system(size: 35, weight: .bold, design: .default))
-                        
+                            .modifier(MyChannelNameTextModifier())
+                        Spacer()
                     }
                 }
                 .clipped()
-        }
+        }.background(.clear)
     }
 }
 

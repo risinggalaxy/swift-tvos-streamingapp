@@ -13,9 +13,9 @@ protocol MainPresenterInterface {
     var mainViewModel: MainViewModel? { get set}
     var interactor: MainInteractorInterface? { get set }
     var wireFrame: MainWireFrameInterface? { get set }
-    func updateViewModel( _ categories: [Categorie] )
+    func updateViewModel( _ categories: [Categories] )
     func notifyViewWithError(message: String)
     func presentPlayerView(with channel: Channel)
-    func presentCategory(with category: Categorie)
+    func presentCategory(with category: Categories)
     
 }

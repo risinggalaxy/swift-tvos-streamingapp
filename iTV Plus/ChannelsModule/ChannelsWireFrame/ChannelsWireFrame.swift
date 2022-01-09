@@ -13,12 +13,12 @@ class ChannelsWireFrame: ChannelsWireFrameInterface {
     
     static var rootView: VIEW?
     
-    static func presentViewController(on view: VIEW, channels: [Channel]) -> VIEW {
+    static func presentViewController(on view: VIEW, parentCategory: (title: String, icon: String), channels: [Channel]) -> VIEW {
         let viewModel = ChannelsViewModel()
         let presenter = ChannelsPresenter()
         let interactor = ChannelsInteractor()
         let wireFrame = ChannelsWireFrame()
-        let view = ChannelsView(presenter: presenter, viewModel: viewModel)
+        let view = ChannelsView(presenter: presenter, viewModel: viewModel, parentCategory: parentCategory)
         interactor.presenter = presenter
         presenter.interactor = interactor
         presenter.wireFrame = wireFrame

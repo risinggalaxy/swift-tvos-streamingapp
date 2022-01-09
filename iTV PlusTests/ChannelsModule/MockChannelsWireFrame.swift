@@ -10,9 +10,10 @@ import AppResources
 @testable import iTV_Plus
 
 class MockChannelsWireFrame: ChannelsWireFrameInterface {
+    
     static var rootView: VIEW?
     
-    static func presentViewController(on view: VIEW, channels: [Channel]) -> VIEW {
+    static func presentViewController(on view: VIEW, parentCategory: (title: String, icon: String), channels: [Channel]) -> VIEW {
         let view = VIEW()
         return view
     }

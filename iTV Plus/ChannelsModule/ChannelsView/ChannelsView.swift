@@ -14,17 +14,33 @@ struct ChannelsView: View, ChannelsViewInterface {
     
     @ObservedObject var viewModel: ChannelsViewModel
     
+    @State var parentCategory: (title: String, icon: String)
+    
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(alignment: .center) {
-                ForEach(try! provideChannels(from: viewModel.channels)) { channel in
-                    Button {
-                        try! presenter?.presentCategory(with: channel)
-                    } label: {
-                        Text(channel.title)
-                    }
+        ZStack {
+            VStack {
+                VStack {
+                    Text(parentCategory.icon)
+                        .font(.system(size: 200))
+                    Text(parentCategory.title)
+                        .font(.system(size: 50, weight: .bold, design: .default))
+                        .foregroundColor(Color(UIColor(named: "titleColor")!))
+                    
                 }
-            }.fullWidth(with: 500)
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .center) {
+                        ForEach(try! provideChannels(from: viewModel.channels)) { channel in
+                            Button {
+                                try! presenter?.presentCategory(with: channel)
+                            } label: {
+                                ChannelsCellDesign(channel: channel)
+                            }
+                            .buttonStyle(CardButtonStyle())
+                            
+                        }
+                    }.fullWidth(with: 500)
+                }
+            }
         }
     }
     
@@ -34,12 +50,18 @@ struct ChannelsView: View, ChannelsViewInterface {
         }
         return outputChannels
     }
+    
+    internal func getURL(from string: String) throws -> URL {
+        guard let channelURL = URL(string: string) else {
+            throw ErrorHandler.failedToLoadURL
+        }
+        return channelURL
+    }
 }
 
 struct ChannelsView_Previews: PreviewProvider {
     static var previews: some View {
-        ChannelsView(viewModel: ChannelsViewModel())
-        
+        ChannelsView(viewModel: ChannelsViewModel(), parentCategory:(title: "Test", icon: "❤️"))
     }
 }
 

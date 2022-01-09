@@ -16,7 +16,7 @@ class MockMainInteractor: MainInteractorInterface {
     var downloadService: DownloadService?
     var didPushUpdateToPresenter: Bool = false
     var presenter: MainPresenterInterface?
-    var categories: [Categorie]! = [] {
+    var categories: [Categories]! = [] {
         didSet {
             if !categories.isEmpty {
                 presenter?.updateViewModel(categories)
@@ -28,7 +28,7 @@ class MockMainInteractor: MainInteractorInterface {
     var didPassDataToPresenter: Bool?
     
     
-    func loadJSON(_ data: Data, completionHandler: @escaping ([Categorie]?, ErrorHandler?) -> Void) {
+    func loadJSON(_ data: Data, completionHandler: @escaping ([Categories]?, ErrorHandler?) -> Void) {
     }
     
     
