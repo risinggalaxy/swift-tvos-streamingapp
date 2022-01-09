@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "iTVPlusMiddle.png",
+      "idiom" : "tv"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
