@@ -10,6 +10,12 @@
 		7302316227899DAC00A00128 /* StorageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7302316127899DAC00A00128 /* StorageHandler.swift */; };
 		73108D11278069E2006D2C41 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73108D10278069E2006D2C41 /* ViewExtensions.swift */; };
 		73167D802774CBE3009B71DA /* CategoryCellDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73167D7F2774CBE3009B71DA /* CategoryCellDesign.swift */; };
+		7368D7BB278C2E9B00D3D44B /* AppResources in Frameworks */ = {isa = PBXBuildFile; productRef = 7368D7BA278C2E9B00D3D44B /* AppResources */; };
+		7368D7BD278C2F0E00D3D44B /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368D7BC278C2F0E00D3D44B /* CategoryListView.swift */; };
+		7368D7BF278C33A200D3D44B /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368D7BE278C33A200D3D44B /* ProgressIndicatorView.swift */; };
+		7368D7C1278C33C700D3D44B /* AppLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368D7C0278C33C700D3D44B /* AppLogoView.swift */; };
+		7368D7C3278C346500D3D44B /* ChannelsIdentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368D7C2278C346500D3D44B /* ChannelsIdentView.swift */; };
+		7368D7C5278C34C100D3D44B /* ChannelsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368D7C4278C34C100D3D44B /* ChannelsListView.swift */; };
 		736D641A27731F0300E61A9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736D641927731F0300E61A9D /* Assets.xcassets */; };
 		736D641D27731F0300E61A9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736D641C27731F0300E61A9D /* Preview Assets.xcassets */; };
 		736D644127731F9F00E61A9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D644027731F9F00E61A9D /* AppDelegate.swift */; };
@@ -67,7 +73,6 @@
 		73C3D5212783704A009BBC10 /* TestChannelsWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3D5202783704A009BBC10 /* TestChannelsWireFrame.swift */; };
 		73C3D5232783711B009BBC10 /* MockChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3D5222783711B009BBC10 /* MockChannelView.swift */; };
 		73EBD9BF278B3DE100E74BE3 /* AppResources in Frameworks */ = {isa = PBXBuildFile; productRef = 73EBD9BE278B3DE100E74BE3 /* AppResources */; };
-		73EBD9D4278B462700E74BE3 /* AppResources in Frameworks */ = {isa = PBXBuildFile; productRef = 73EBD9D3278B462700E74BE3 /* AppResources */; };
 		73F368AF27831F8A006CCD0B /* PlayerViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F368AE27831F8A006CCD0B /* PlayerViewTest.swift */; };
 		73F368B1278322C9006CCD0B /* MockPlayerModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F368B0278322C9006CCD0B /* MockPlayerModulePresenter.swift */; };
 		73F368B327832303006CCD0B /* MockPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F368B227832303006CCD0B /* MockPlayerViewModel.swift */; };
@@ -88,6 +93,11 @@
 		7302316127899DAC00A00128 /* StorageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageHandler.swift; sourceTree = "<group>"; };
 		73108D10278069E2006D2C41 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		73167D7F2774CBE3009B71DA /* CategoryCellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellDesign.swift; sourceTree = "<group>"; };
+		7368D7BC278C2F0E00D3D44B /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
+		7368D7BE278C33A200D3D44B /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
+		7368D7C0278C33C700D3D44B /* AppLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogoView.swift; sourceTree = "<group>"; };
+		7368D7C2278C346500D3D44B /* ChannelsIdentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsIdentView.swift; sourceTree = "<group>"; };
+		7368D7C4278C34C100D3D44B /* ChannelsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsListView.swift; sourceTree = "<group>"; };
 		736D641227731F0100E61A9D /* iTV Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTV Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		736D641927731F0300E61A9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		736D641C27731F0300E61A9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -158,7 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73EBD9D4278B462700E74BE3 /* AppResources in Frameworks */,
+				7368D7BB278C2E9B00D3D44B /* AppResources in Frameworks */,
 				73EBD9BF278B3DE100E74BE3 /* AppResources in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				73108D10278069E2006D2C41 /* ViewExtensions.swift */,
+				7368D7BE278C33A200D3D44B /* ProgressIndicatorView.swift */,
+				7368D7C0278C33C700D3D44B /* AppLogoView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -277,6 +289,7 @@
 				736D64AF2773354100E61A9D /* ChannelsWireFrame */,
 				736D64AE2773353E00E61A9D /* ChannelsViewModel */,
 				73953F0727838AF0003480C6 /* ChannelsCellDesign.swift */,
+				7368D7C2278C346500D3D44B /* ChannelsIdentView.swift */,
 			);
 			path = ChannelsModule;
 			sourceTree = "<group>";
@@ -363,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				736D648C27732B3400E61A9D /* MainView.swift */,
+				7368D7BC278C2F0E00D3D44B /* CategoryListView.swift */,
 				73167D7F2774CBE3009B71DA /* CategoryCellDesign.swift */,
 				736D648A27732B1A00E61A9D /* Interface */,
 			);
@@ -478,6 +492,7 @@
 			children = (
 				736D64B32773357C00E61A9D /* ChannelsView.swift */,
 				736D64B52773358D00E61A9D /* Interface */,
+				7368D7C4278C34C100D3D44B /* ChannelsListView.swift */,
 			);
 			path = ChannelsView;
 			sourceTree = "<group>";
@@ -743,7 +758,7 @@
 			name = "iTV Plus";
 			packageProductDependencies = (
 				73EBD9BE278B3DE100E74BE3 /* AppResources */,
-				73EBD9D3278B462700E74BE3 /* AppResources */,
+				7368D7BA278C2E9B00D3D44B /* AppResources */,
 			);
 			productName = "iTV Plus";
 			productReference = 736D641227731F0100E61A9D /* iTV Plus.app */;
@@ -797,7 +812,7 @@
 			);
 			mainGroup = 736D640927731F0100E61A9D;
 			packageReferences = (
-				73EBD9D2278B462700E74BE3 /* XCRemoteSwiftPackageReference "AppResources" */,
+				7368D7B9278C2E9B00D3D44B /* XCRemoteSwiftPackageReference "AppResources" */,
 			);
 			productRefGroup = 736D641327731F0100E61A9D /* Products */;
 			projectDirPath = "";
@@ -833,7 +848,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7368D7C5278C34C100D3D44B /* ChannelsListView.swift in Sources */,
 				736D64DB277337EF00E61A9D /* ChannelsWireFrame.swift in Sources */,
+				7368D7C3278C346500D3D44B /* ChannelsIdentView.swift in Sources */,
 				736D64EF27733C4C00E61A9D /* PlayerWireFrame.swift in Sources */,
 				736D64E727733C1D00E61A9D /* PlayerInteractor.swift in Sources */,
 				73167D802774CBE3009B71DA /* CategoryCellDesign.swift in Sources */,
@@ -847,6 +864,7 @@
 				736D64D5277336A500E61A9D /* ChannelsInteractorInterface.swift in Sources */,
 				736D648D27732B3400E61A9D /* MainView.swift in Sources */,
 				736D649927732BDE00E61A9D /* MainPresenterInterface.swift in Sources */,
+				7368D7BD278C2F0E00D3D44B /* CategoryListView.swift in Sources */,
 				736D64A127732C0900E61A9D /* MainViewModelInterface.swift in Sources */,
 				736D64DD2773380000E61A9D /* ChannelsWireFrameInterface.swift in Sources */,
 				736D64D12773368F00E61A9D /* ChannelsViewInterface.swift in Sources */,
@@ -871,6 +889,8 @@
 				737B5718277465C0006B231E /* DownloadServiceInterface.swift in Sources */,
 				737B571527746315006B231E /* DownloadService.swift in Sources */,
 				736D649B27732BE800E61A9D /* MainWireFrameInterface.swift in Sources */,
+				7368D7BF278C33A200D3D44B /* ProgressIndicatorView.swift in Sources */,
+				7368D7C1278C33C700D3D44B /* AppLogoView.swift in Sources */,
 				736D649E27732BF800E61A9D /* MainViewModel.swift in Sources */,
 				736D64A727732C2A00E61A9D /* MainWireFrame.swift in Sources */,
 			);
@@ -1171,24 +1191,24 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		73EBD9D2278B462700E74BE3 /* XCRemoteSwiftPackageReference "AppResources" */ = {
+		7368D7B9278C2E9B00D3D44B /* XCRemoteSwiftPackageReference "AppResources" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/risinggalaxy/AppResources";
 			requirement = {
 				kind = exactVersion;
-				version = 1.1.2;
+				version = 1.1.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		73EBD9BE278B3DE100E74BE3 /* AppResources */ = {
+		7368D7BA278C2E9B00D3D44B /* AppResources */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 7368D7B9278C2E9B00D3D44B /* XCRemoteSwiftPackageReference "AppResources" */;
 			productName = AppResources;
 		};
-		73EBD9D3278B462700E74BE3 /* AppResources */ = {
+		73EBD9BE278B3DE100E74BE3 /* AppResources */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 73EBD9D2278B462700E74BE3 /* XCRemoteSwiftPackageReference "AppResources" */;
 			productName = AppResources;
 		};
 /* End XCSwiftPackageProductDependency section */

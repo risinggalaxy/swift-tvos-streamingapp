@@ -11,44 +11,19 @@ import AVKit
 
 struct MainView: View, MainViewInterface {
     
-    var presenter: MainPresenterInterface?
+    @State var presenter: MainPresenterInterface?
     @StateObject var mainViewModel: MainViewModel
     
     var body: some View {
         ZStack {
             VStack {
-                Image("appLogo", bundle: nil)
-                    .padding(100)
-                    .scaleEffect(0.8)
-                    .opacity(0.5)
+                AppLogoView()
                 if !mainViewModel.categories.isEmpty {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
-                            ForEach(mainViewModel.categories, id: \.self) { category in
-                                Button {
-                                    presenter?.presentCategory(with: category)
-                                } label: {
-                                    CategoryCellDesign(category: category)
-                                }
-                                .buttonStyle(CardButtonStyle())
-                                .contextMenu {
-                                    ForEach(category.channels) { channel in
-                                        Button(action: {
-                                            presenter?.presentPlayerView(with:channel)
-                                        }, label: {
-                                            Text(channel.title)
-                                        })
-                                    }
-                                }
-                            }
-                        }
-                        .fullWidth(with: 500)
-                    }
+                    CategoryListView(categories: mainViewModel.categories, presenter: $presenter)
                 } else {
                     if mainViewModel.errorMessage.isEmpty {
                         Spacer()
-                        Text("Loading...")
-                            .font(.system(size: 25, weight: .bold, design: .default))
+                       ProgressIndicatorView()
                     } else {
                         Spacer()
                         Text(mainViewModel.errorMessage)
@@ -61,9 +36,10 @@ struct MainView: View, MainViewInterface {
         }
     }
 }
+
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView(mainViewModel: MainViewModel())
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
     }
 }
