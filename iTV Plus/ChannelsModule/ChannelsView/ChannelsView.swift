@@ -10,7 +10,7 @@ import AppResources
 
 struct ChannelsView: View, ChannelsViewInterface {
     
-    var presenter: ChannelsPresenterInterface?
+    @State var presenter: ChannelsPresenterInterface?
     
     @ObservedObject var viewModel: ChannelsViewModel
     
@@ -19,43 +19,17 @@ struct ChannelsView: View, ChannelsViewInterface {
     var body: some View {
         ZStack {
             VStack {
-                VStack {
-                    Text(parentCategory.icon)
-                        .font(.system(size: 200))
-                    Text(parentCategory.title)
-                        .font(.system(size: 50, weight: .bold, design: .default))
-                        .foregroundColor(Color(UIColor(named: "titleColor")!))
-                    
-                }
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(alignment: .center) {
-                        ForEach(try! provideChannels(from: viewModel.channels)) { channel in
-                            Button {
-                                try! presenter?.presentCategory(with: channel)
-                            } label: {
-                                ChannelsCellDesign(channel: channel)
-                            }
-                            .buttonStyle(CardButtonStyle())
-                            
-                        }
-                    }.fullWidth(with: 500)
-                }
+                ChannelsIdentView(parentCategory: parentCategory)
+                ChannelsListView(presenter: $presenter, channels: provideChannels(viewModel.channels))
             }
         }
     }
     
-    internal func provideChannels(from channels: [Channel]?) throws -> [Channel] {
-        guard let outputChannels = channels else  {
-            throw ErrorHandler.invalidChannelList
+    internal func provideChannels(_ from: [Channel]? ) -> [Channel] {
+        guard let channels = from else {
+            fatalError(ErrorHandler.invalidChanel.localizedDescription)
         }
-        return outputChannels
-    }
-    
-    internal func getURL(from string: String) throws -> URL {
-        guard let channelURL = URL(string: string) else {
-            throw ErrorHandler.failedToLoadURL
-        }
-        return channelURL
+        return channels
     }
 }
 
