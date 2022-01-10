@@ -10,12 +10,13 @@
 		7302316227899DAC00A00128 /* StorageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7302316127899DAC00A00128 /* StorageHandler.swift */; };
 		73108D11278069E2006D2C41 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73108D10278069E2006D2C41 /* ViewExtensions.swift */; };
 		73167D802774CBE3009B71DA /* CategoryCellDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73167D7F2774CBE3009B71DA /* CategoryCellDesign.swift */; };
-		7368D7BB278C2E9B00D3D44B /* AppResources in Frameworks */ = {isa = PBXBuildFile; productRef = 7368D7BA278C2E9B00D3D44B /* AppResources */; };
 		7368D7BD278C2F0E00D3D44B /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368D7BC278C2F0E00D3D44B /* CategoryListView.swift */; };
 		7368D7BF278C33A200D3D44B /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368D7BE278C33A200D3D44B /* ProgressIndicatorView.swift */; };
 		7368D7C1278C33C700D3D44B /* AppLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368D7C0278C33C700D3D44B /* AppLogoView.swift */; };
 		7368D7C3278C346500D3D44B /* ChannelsIdentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368D7C2278C346500D3D44B /* ChannelsIdentView.swift */; };
 		7368D7C5278C34C100D3D44B /* ChannelsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368D7C4278C34C100D3D44B /* ChannelsListView.swift */; };
+		7368D7C8278C5E7200D3D44B /* AppResources in Frameworks */ = {isa = PBXBuildFile; productRef = 7368D7C7278C5E7200D3D44B /* AppResources */; };
+		7368D7CA278C64DF00D3D44B /* TestChannelsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7368D7C9278C64DF00D3D44B /* TestChannelsListView.swift */; };
 		736D641A27731F0300E61A9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736D641927731F0300E61A9D /* Assets.xcassets */; };
 		736D641D27731F0300E61A9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736D641C27731F0300E61A9D /* Preview Assets.xcassets */; };
 		736D644127731F9F00E61A9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D644027731F9F00E61A9D /* AppDelegate.swift */; };
@@ -98,6 +99,7 @@
 		7368D7C0278C33C700D3D44B /* AppLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogoView.swift; sourceTree = "<group>"; };
 		7368D7C2278C346500D3D44B /* ChannelsIdentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsIdentView.swift; sourceTree = "<group>"; };
 		7368D7C4278C34C100D3D44B /* ChannelsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsListView.swift; sourceTree = "<group>"; };
+		7368D7C9278C64DF00D3D44B /* TestChannelsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChannelsListView.swift; sourceTree = "<group>"; };
 		736D641227731F0100E61A9D /* iTV Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTV Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		736D641927731F0300E61A9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		736D641C27731F0300E61A9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -168,7 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7368D7BB278C2E9B00D3D44B /* AppResources in Frameworks */,
+				7368D7C8278C5E7200D3D44B /* AppResources in Frameworks */,
 				73EBD9BF278B3DE100E74BE3 /* AppResources in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -736,6 +738,7 @@
 				73C3D51E27836B63009BBC10 /* MockChannelsWireFrame.swift */,
 				73C3D5202783704A009BBC10 /* TestChannelsWireFrame.swift */,
 				73C3D5222783711B009BBC10 /* MockChannelView.swift */,
+				7368D7C9278C64DF00D3D44B /* TestChannelsListView.swift */,
 			);
 			path = ChannelsModule;
 			sourceTree = "<group>";
@@ -758,7 +761,7 @@
 			name = "iTV Plus";
 			packageProductDependencies = (
 				73EBD9BE278B3DE100E74BE3 /* AppResources */,
-				7368D7BA278C2E9B00D3D44B /* AppResources */,
+				7368D7C7278C5E7200D3D44B /* AppResources */,
 			);
 			productName = "iTV Plus";
 			productReference = 736D641227731F0100E61A9D /* iTV Plus.app */;
@@ -812,7 +815,7 @@
 			);
 			mainGroup = 736D640927731F0100E61A9D;
 			packageReferences = (
-				7368D7B9278C2E9B00D3D44B /* XCRemoteSwiftPackageReference "AppResources" */,
+				7368D7C6278C5E7200D3D44B /* XCRemoteSwiftPackageReference "AppResources" */,
 			);
 			productRefGroup = 736D641327731F0100E61A9D /* Products */;
 			projectDirPath = "";
@@ -902,6 +905,7 @@
 			files = (
 				73C3D5212783704A009BBC10 /* TestChannelsWireFrame.swift in Sources */,
 				736D651927737C9F00E61A9D /* MockViewModel.swift in Sources */,
+				7368D7CA278C64DF00D3D44B /* TestChannelsListView.swift in Sources */,
 				736D650C27736CE500E61A9D /* MainInteractorTest.swift in Sources */,
 				736D650F27736DAF00E61A9D /* MockMainPresenter.swift in Sources */,
 				7397B810277B409F00682178 /* MainWireFrameTest.swift in Sources */,
@@ -1191,20 +1195,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7368D7B9278C2E9B00D3D44B /* XCRemoteSwiftPackageReference "AppResources" */ = {
+		7368D7C6278C5E7200D3D44B /* XCRemoteSwiftPackageReference "AppResources" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/risinggalaxy/AppResources";
 			requirement = {
 				kind = exactVersion;
-				version = 1.1.3;
+				version = 1.1.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7368D7BA278C2E9B00D3D44B /* AppResources */ = {
+		7368D7C7278C5E7200D3D44B /* AppResources */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7368D7B9278C2E9B00D3D44B /* XCRemoteSwiftPackageReference "AppResources" */;
+			package = 7368D7C6278C5E7200D3D44B /* XCRemoteSwiftPackageReference "AppResources" */;
 			productName = AppResources;
 		};
 		73EBD9BE278B3DE100E74BE3 /* AppResources */ = {

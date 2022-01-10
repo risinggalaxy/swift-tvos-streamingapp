@@ -20,14 +20,14 @@ struct ChannelsView: View, ChannelsViewInterface {
         ZStack {
             VStack {
                 ChannelsIdentView(parentCategory: parentCategory)
-                ChannelsListView(presenter: $presenter, channels: provideChannels(viewModel.channels))
+                ChannelsListView(presenter: $presenter, channels: try! provideChannels( viewModel.channels))
             }
         }
     }
     
-    internal func provideChannels(_ from: [Channel]? ) -> [Channel] {
+    internal func provideChannels(_ from: [Channel]? ) throws -> [Channel] {
         guard let channels = from else {
-            fatalError(ErrorHandler.invalidChanel.localizedDescription)
+            throw ErrorHandler.invalidChannelList
         }
         return channels
     }

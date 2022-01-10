@@ -31,7 +31,7 @@ struct ChannelsListView: View {
     
     internal func provideChannels(from channels: [Channel]?) throws -> [Channel] {
         guard let outputChannels = channels else  {
-            throw ErrorHandler.invalidChanel
+            throw ErrorHandler.invalidChannelList
         }
         return outputChannels
     }

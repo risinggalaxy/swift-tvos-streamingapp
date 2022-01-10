@@ -33,7 +33,7 @@ class TestChannelsView: XCTestCase {
     func testChannelView_WhenChannelsReceived_ReturningResultShouldNotBeNil() {
         let testString = "One"
         let channels = [Channel(id: 0, title: testString, color: testString, url: testString)]
-        let result = try! sut.provideChannels(from: channels)
+        let result = try! sut.provideChannels(channels)
         XCTAssertNotNil(result)
         XCTAssertEqual(result.count, 1)
         guard let firstChannel = channels.first else { return }
@@ -46,7 +46,7 @@ class TestChannelsView: XCTestCase {
     
     func testChannelView_WhenInvalidChannelsGiven_ShouldThrowAnError() {
         do {
-            let result = try sut.provideChannels(from: nil)
+            let result = try sut.provideChannels(nil)
             XCTAssertThrowsError(result)
         } catch let error {
             XCTAssertNotNil(error)
