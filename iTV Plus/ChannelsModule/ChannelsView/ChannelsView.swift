@@ -22,7 +22,7 @@ struct ChannelsView: View, ChannelsViewInterface {
                 ChannelsIdentView(parentCategory: parentCategory)
                 ChannelsListView(presenter: $presenter, channels: try! provideChannels( viewModel.channels))
             }
-        }
+        }.shadow(radius: kShadowRadius)
     }
     
     internal func provideChannels(_ from: [Channel]? ) throws -> [Channel] {

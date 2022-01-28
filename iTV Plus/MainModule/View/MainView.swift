@@ -16,8 +16,11 @@ struct MainView: View, MainViewInterface {
     
     var body: some View {
         ZStack {
+            WeatherViewWireframe.presentViewController()
+                .ignoresSafeArea()
             VStack {
-                AppLogoView()
+                Spacer()
+                    .padding(100)
                 if !mainViewModel.categories.isEmpty {
                     CategoryListView(categories: mainViewModel.categories, presenter: $presenter)
                 } else {
@@ -32,7 +35,7 @@ struct MainView: View, MainViewInterface {
                 }
                 Spacer()
                 CopyRightView()
-            }
+            }.shadow(radius: kShadowRadius)
         }
     }
 }

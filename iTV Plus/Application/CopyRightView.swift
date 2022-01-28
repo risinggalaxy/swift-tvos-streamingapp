@@ -10,8 +10,8 @@ import SwiftUI
 struct CopyRightView: View {
     var body: some View {
         Text("Designed And Developed By: Yasser Farahi © RISING GALAXY 2021 - 2022")
-            .font(.system(size: 20, weight: .bold, design: .default))
-            .foregroundColor(Color(uiColor: UIColor(named: "titleColor")!))
+            .font(.system(size: 18, weight: .bold, design: .default))
+            .foregroundColor(.white)
     }
 }
 

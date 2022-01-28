@@ -39,6 +39,16 @@
                ReferencedContainer = "container:iTV Plus.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "73216CE2278CBEF0006C58AE"
+               BuildableName = "iTV PlusUITests.xctest"
+               BlueprintName = "iTV PlusUITests"
+               ReferencedContainer = "container:iTV Plus.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
