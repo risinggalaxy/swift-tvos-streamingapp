@@ -40,6 +40,6 @@ struct WeatherInformationView: View {
 
 struct WeatherInformationView_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherInformationView(weatherModel: WeatherModel(location: "Amsterdam", temperature: 33.0, condition: "☀️", description: "It is currently sunny"))
+        WeatherInformationView(weatherModel: WeatherModel(id: 900, location: "Amsterdam", temperature: 33.0, condition: "☀️", description: "It is currently sunny"))
     }
 }

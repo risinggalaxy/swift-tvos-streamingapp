@@ -23,7 +23,8 @@ class WeatherViewPresenter: WeatherViewPresenterInterface {
     var interactor: WeatherViewInteractorInterface? {
         didSet {
             interactor?.fetchDataFromWeatherService()
-        }}
+        }
+    }
     
     var wireFrame: WeatherViewWireFrameInterface?
     

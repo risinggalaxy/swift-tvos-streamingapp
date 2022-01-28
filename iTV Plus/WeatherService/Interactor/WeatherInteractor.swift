@@ -31,27 +31,37 @@ class WeatherViewInteractor: NSObject, WeatherViewInteractorInterface, CLLocatio
         self.downloadService = downloadService
         self.locationManager = locationManager
         self.locationManager?.delegate = self
-        }
-        
+    }
+    
     func fetchDataFromWeatherService() {
+        
+        presenter?.passWeatherDataToView(model: kDefaultWeather)
         
         switch locationManager?.authorizationStatus {
         case .notDetermined: locationManager?.requestWhenInUseAuthorization()
             isAllowedToUseLocation = true
+            
         case .authorizedAlways, .authorizedWhenInUse:
-            guard let latitude = locationManager?.location?.coordinate.latitude else { print("missing"); return }
-            guard let longitude = locationManager?.location?.coordinate.longitude else {  print("missing 2"); return }
+            guard let latitude = locationManager?.location?.coordinate.latitude else {
+                presenter?.passWeatherDataToView(model: kDefaultWeather)
+                //TODO: Tell Presenter To Update WeatherView + Write UnitTest
+                return
+            }
+            guard let longitude = locationManager?.location?.coordinate.longitude else {
+                //TODO: Tell Presenter To Update WeatherView + Write UnitTest
+                return
+            }
             
             downloadService?.urlString =
             "\(kOpenWeatherMapUrlString)lat=\(latitude)&lon=\(longitude)&appid=\(kOpenWeatherMapApikey)&units=metric"
             downloadService?.downloader(completionHandler: { [weak self] data, error in
-                guard let strongSelf = self else {return}
-                
+                guard let strongSelf = self else { return }
                 if let receivedError = error {
                     print(receivedError.localizedDescription)
+                    //TODO: Tell Presenter To Update WeatherView With Error + Write Unit Test
                 }
                 guard let receivedData = data else {
-                    //TODO: Error Handling
+                    //TODO: Tell Presenter To Update WeatherView + Write Unit Test
                     return
                 }
                 do {
@@ -64,17 +74,18 @@ class WeatherViewInteractor: NSObject, WeatherViewInteractorInterface, CLLocatio
                     let main = jsonData["main"] as! [String: Any]
                     let temperature = main["temp"] as! Double
                     let location = jsonData["name"] as! String
-                    let weatherModel = WeatherModel(location: location,
+                    let weatherModel = WeatherModel(id: condition, location: location,
                                                     temperature: temperature,
                                                     condition: selectWeatherScene(condition: condition).emoji,
                                                     description: "It is \(description)")
-                    
+                    strongSelf.presenter?.passWeatherDataToView(model: weatherModel)
+                    //Update spriteScene constants
                     kWeatherGradientColor = selectWeatherScene(condition: condition).gradientColors
                     kWeatherSceneName = selectWeatherScene(condition: condition).sceneName
                     NotificationCenter.default.post(name: Notification.Name("UpdateNode"), object: nil)
-                    strongSelf.presenter?.passWeatherDataToView(model: weatherModel)
-
+                    
                 } catch let error {
+                    //TODO: Tell Presenter To Update WeatherView With Error + Write Unit Test
                     fatalError("\(error)")
                 }
             })
@@ -84,10 +95,9 @@ class WeatherViewInteractor: NSObject, WeatherViewInteractorInterface, CLLocatio
         }
     }
     
-    
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         if isAllowedToUseLocation {
-        fetchDataFromWeatherService()
+            fetchDataFromWeatherService()
         }
     }
     

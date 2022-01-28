@@ -13,6 +13,7 @@ struct WeatherView: View, WeatherViewInterface {
     @Environment(\.scenePhase) var scenePhase
     @State var presenter: WeatherViewPresenterInterface?
     @StateObject var viewModel: WeatherViewModel
+    
     var body: some View {
         ZStack {
             ZStack {
@@ -33,8 +34,8 @@ struct WeatherView: View, WeatherViewInterface {
                 .onChange(of: scenePhase, perform: { newValue in
                     switch newValue {
                     case .active: presenter?.refreshWeatherData()
-                    case .inactive: print("Inactive")
-                    case .background: print("Background")
+                    case .inactive: break
+                    case .background: break
                     default: presenter?.refreshWeatherData()
                     }
                 })
