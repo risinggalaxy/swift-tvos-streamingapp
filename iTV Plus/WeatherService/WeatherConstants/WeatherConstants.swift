@@ -6,17 +6,21 @@
 //
 
 import UIKit
+import AppResources
 
 public let kWeatherAndDateMainFontSize: CGFloat = 150
-public let kWeatherAndDateSubFontSize: CGFloat = 35
+public let kWeatherAndDateSubFontSize: CGFloat = 45
 public let kWeatherAndDatePaddingValue: CGFloat = 100
 public var kWeatherSceneName: String = ""
 public var kShadowRadius: Double = 10.0
-public let kOpenWeatherMapApikey: String = "YOUR-API-KEY"
+public let kOpenWeatherMapApikey: String = "ADD-YOUR-API-KEY"
 public let kOpenWeatherMapUrlString: String = "https://api.openweathermap.org/data/2.5/weather?"
 public var kWeatherGradientColor: [[CGColor]] = [[],[]]
-public let kDefaultWeather = WeatherModel(id: 900, location: "🤷🏻", temperature: 0.0, condition: "🤷🏻", description: "Location services was denied")
-public let kAllowedWeatherTest = WeatherModel(id: 800, location: "Amsterdam", temperature: 10.0, condition: "☀️", description: "It sunny")
+public let kRefreshWeatherDataNotificationName = NSNotification.Name("RefreshWeather")
+public let kUpdateWeatherSceneNotificationName = NSNotification.Name("UpdateNode")
+public let kDefaultWeather = WeatherModel(id: 900, location: "🤷🏻", temperature: 0.0, condition: "🤷🏻", description: "Location services was denied", sunrise: "🤷🏻",
+                                          sunset: "🤷🏻", feelTemp: 0.0)
+public let kAllowedWeatherTest = WeatherModel(id: 800, location: "Amsterdam", temperature: 10.0, condition: "☀️", description: "It sunny", sunrise: "", sunset: "", feelTemp: 8.0)
 
 //Returns a tuple based on the current weather condition
 public func selectWeatherScene(condition: Int) -> (emoji: String, sceneName: String, gradientColors: [[CGColor]]) {
@@ -47,3 +51,17 @@ public func selectWeatherScene(condition: Int) -> (emoji: String, sceneName: Str
     }
 }
 
+public enum WeatherError: LocalizedError, Equatable {
+    case failedToConnectToWeatherApi,
+         failedToGetWeatherData,
+         failedWithCorruptWeatherData,
+         failedWith(description: String)
+    public var errorDescription: String? {
+        switch self {
+        case .failedToConnectToWeatherApi: return "Failed to connect weather-API"
+        case .failedToGetWeatherData: return "Couldn't retrieve weather data"
+        case .failedWithCorruptWeatherData: return "Failed with corrupt weather data"
+        case .failedWith(description: let description): return description
+        }
+    }
+}

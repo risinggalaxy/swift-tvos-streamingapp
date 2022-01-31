@@ -25,10 +25,21 @@ struct WeatherInformationView: View {
                     .foregroundColor(.white)
                     .font(.system(size: kWeatherAndDateMainFontSize - 70, weight: .black, design: .default))
             }
-            Text(weatherModel.description + " in " + weatherModel.location)
-                .foregroundColor(.white)
-                .font(.system(size: kWeatherAndDateSubFontSize, weight: .medium, design: .default))
-                .frame(alignment: .leading)
+            VStack(alignment: .leading, spacing: 20) {
+                Text(weatherModel.description + " in " + weatherModel.location)
+                    .foregroundColor(.white)
+                    .font(.system(size: kWeatherAndDateSubFontSize, weight: .medium, design: .default))
+                    .frame(alignment: .leading)
+                VStack(alignment: .leading, spacing: 10){
+                Text("☀️ Sunrise \(weatherModel.sunrise) ")
+                    .modifier(WeatherSubTextModifier())
+                Text("🌗 Sunset \(weatherModel.sunset) ")
+                    .modifier(WeatherSubTextModifier())
+                Text("🌡 Feel Temperature \(Int(weatherModel.feelTemp)) ")
+                    .modifier(WeatherSubTextModifier())
+                }
+            }
+            
         }.opacity(widgetsOpacity)
         .onAppear {
             withAnimation(Animation.easeInOut(duration: 2.0)) {
@@ -40,6 +51,19 @@ struct WeatherInformationView: View {
 
 struct WeatherInformationView_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherInformationView(weatherModel: WeatherModel(id: 900, location: "Amsterdam", temperature: 33.0, condition: "☀️", description: "It is currently sunny"))
+        WeatherInformationView(weatherModel: kAllowedWeatherTest)
+    }
+}
+
+struct WeatherSubTextModifier: ViewModifier {
+    
+    @Environment(\.colorScheme) var colorScheme
+    
+    func body(content: Content) -> some View {
+        content
+            .font(.system(size: 30, weight: .medium, design: .default))
+            .foregroundColor(.white)
+            .padding()
+            .background(.quaternary, in: Capsule()).foregroundColor( colorScheme == .light ? .white : .black)
     }
 }

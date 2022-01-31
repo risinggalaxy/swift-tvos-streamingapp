@@ -19,7 +19,7 @@ class PlayerViewTest: XCTestCase {
         super.setUp()
         mockPresenter = MockPlayerModulePresenter()
         mockViewModel = MockPlayerViewModel()
-        sut = PlayerView(presenter: mockPresenter, viewModel: mockViewModel, screen: .zero)
+        sut = PlayerView(presenter: mockPresenter, screen: .zero, viewModel: mockViewModel)
     }
     
     override func tearDown() {

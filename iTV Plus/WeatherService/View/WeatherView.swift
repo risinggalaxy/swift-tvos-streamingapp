@@ -10,7 +10,6 @@ import SpriteKit
 
 struct WeatherView: View, WeatherViewInterface {
     
-    @Environment(\.scenePhase) var scenePhase
     @State var presenter: WeatherViewPresenterInterface?
     @StateObject var viewModel: WeatherViewModel
     
@@ -31,14 +30,7 @@ struct WeatherView: View, WeatherViewInterface {
                 }
                 Spacer()
             }.shadow(radius: kShadowRadius)
-                .onChange(of: scenePhase, perform: { newValue in
-                    switch newValue {
-                    case .active: presenter?.refreshWeatherData()
-                    case .inactive: break
-                    case .background: break
-                    default: presenter?.refreshWeatherData()
-                    }
-                })
+ 
         }
     }
 }

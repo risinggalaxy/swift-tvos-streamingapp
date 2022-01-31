@@ -10,7 +10,7 @@ import Foundation
 
 class MockWeatherPresenter: WeatherViewPresenterInterface {
     
-    
+    var notificationCenter: NotificationCenter!
     var viewModel: WeatherViewModel?
     var interactor: WeatherViewInteractorInterface?
     var wireFrame: WeatherViewWireFrameInterface?
@@ -18,6 +18,10 @@ class MockWeatherPresenter: WeatherViewPresenterInterface {
     var didReceiveDataFromInteractor: Bool = false
     var numbersDidReceiveDataFromInteractor: Int = 0
     var dataModelFromInteractor: WeatherModel?
+    
+    init(notificationCenter: NotificationCenter = .default) {
+        self.notificationCenter = notificationCenter
+    }
     
     func passWeatherDataToView(model: WeatherModel) {
         didReceiveDataFromInteractor = true
@@ -28,4 +32,10 @@ class MockWeatherPresenter: WeatherViewPresenterInterface {
     func refreshWeatherData() {
     }
     
+    func refreshWeatherDataOnNotification() {
+        refreshWeatherData()
+    }
+    
+    func updateViewWithError(message: String) {
+    }
 }

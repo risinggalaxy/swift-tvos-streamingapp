@@ -16,7 +16,7 @@ class PlayerWireFrame: PlayerWireFrameInterface {
         let presenter = PlayerPresenter()
         let interactor = PlayerInteractor()
         let wireFrame = PlayerWireFrame()
-        let view = PlayerView(presenter: presenter, viewModel: viewModel)
+        let view = PlayerView(presenter: presenter, avPlayer: nil, viewModel: viewModel)
         interactor.presenter = presenter
         presenter.interactor = interactor
         presenter.viewModel = viewModel

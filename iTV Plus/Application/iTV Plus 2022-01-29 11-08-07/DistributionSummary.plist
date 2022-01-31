@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>iTV Plus.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>14</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>351AFFABD6D1C7780EF5C24FA94BCB3D629F085A</string>
+				<key>dateExpires</key>
+				<string>04/12/2022</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>UU5J2SPKHT.com.risinggalaxy.com.iTV-Plus</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>UU5J2SPKHT</string>
+				<key>get-task-allow</key>
+				<true/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>UU5J2SPKHT.com.risinggalaxy.com.iTV-Plus</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>iTV Plus.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>51526f27-349c-48de-8a49-e24fd9017332</string>
+				<key>dateExpires</key>
+				<string>22/12/2022</string>
+				<key>name</key>
+				<string>tvOS Team Provisioning Profile: *</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>UU5J2SPKHT</string>
+				<key>name</key>
+				<string>Yasser Farahi</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.1</string>
+		</dict>
+	</array>
+</dict>
+</plist>

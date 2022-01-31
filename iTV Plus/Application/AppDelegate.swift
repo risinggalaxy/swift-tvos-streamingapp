@@ -12,7 +12,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions:
+    [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         setupFirstView()
         return true
     }
@@ -23,6 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let view = MainWireFrame.presentViewController(window: uiWindow)
         uiWindow.rootViewController = view
         uiWindow.makeKeyAndVisible()
+    }
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        NotificationCenter.default.post(name: kRefreshWeatherDataNotificationName,
+                                        object: nil)
+        NotificationCenter.default.post(name: kRefreshChannelsNotificationName,
+                                            object: nil)
     }
     
 }

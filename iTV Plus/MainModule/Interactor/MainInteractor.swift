@@ -6,13 +6,14 @@
 //
 
 import Foundation
+import Network
 import AppResources
 
 class MainInteractor: MainInteractorInterface {
     
     var urlSession: URLSession?
     var presenter: MainPresenterInterface?
-    var downloadService: DownloadService?
+    var downloadService: DownloadServiceInterface!
     var categories: [ITVCategory]! = [] {
         didSet {
             presenter?.updateViewModel(categories)
@@ -22,22 +23,36 @@ class MainInteractor: MainInteractorInterface {
     init(urlSession: URLSession = .shared) {
         self.urlSession = urlSession
         self.downloadService = DownloadService(urlSession: urlSession, urlString: ChannelsDownloadURL.urlString)
-        startDownload(with: downloadService!)
+        startDownload()
     }
     
-    func startDownload(with downloadService: DownloadService ) {
+    fileprivate func extractingJSON(_ error: ErrorHandler?, _ categories: [ITVCategory]?) {
+        if let receivedError = error {
+            presenter?.notifyViewWithError(message: "Failed To Load Channels With: \(receivedError.localizedDescription)")
+        }
+        if let receiveCategories = categories {
+            self.categories = receiveCategories
+        }
+    }
+    
+    func startDownload() {
+       let networkManager = NetworkManager()
         downloadService.downloader { [weak self] data, error in
+            guard let strongSelf = self else { return }
             if let receivedError = error {
-                self?.presenter?.notifyViewWithError(message: "Failed To Connect To The Server With: \(receivedError)")
+                if networkManager.hasConnection {
+                    strongSelf.presenter?.notifyViewWithError(message: "Failed To Connect To The Server With: \(receivedError)")
+                } else {
+                    print("STATUS \(networkManager.hasConnection)")
+                    strongSelf.loadJSON(mockJSON!) { categories, error in
+                        strongSelf.extractingJSON(error, categories)
+                        strongSelf.presenter?.notifyViewWithError(message: "Please check your internet connection")
+                    }
+                }
             }
             if let receivedData = data {
-                self?.loadJSON(receivedData, completionHandler: { [weak self] categories, error in
-                    if let receivedError = error {
-                        self?.presenter?.notifyViewWithError(message: "Failed To Load Channels With: \(receivedError.localizedDescription)")
-                    }
-                    if let receiveCategories = categories {
-                        self?.categories = receiveCategories
-                    }
+                strongSelf.loadJSON(receivedData, completionHandler: { categories, error in
+                    strongSelf.extractingJSON(error, categories)
                 })
             }
         }

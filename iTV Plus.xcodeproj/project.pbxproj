@@ -79,7 +79,6 @@
 		737B571527746315006B231E /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737B571427746315006B231E /* DownloadService.swift */; };
 		737B5718277465C0006B231E /* DownloadServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737B5717277465C0006B231E /* DownloadServiceInterface.swift */; };
 		73803EC127A3CE65008CF2BC /* HardRain.sks in Resources */ = {isa = PBXBuildFile; fileRef = 73803EC027A3CE65008CF2BC /* HardRain.sks */; };
-		73803EC727A3D13D008CF2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73803EC527A3D13D008CF2BC /* Assets.xcassets */; };
 		73803ED227A3DDCA008CF2BC /* WeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73803ED127A3DDCA008CF2BC /* WeatherInteractor.swift */; };
 		73803ED427A3DE73008CF2BC /* WeatherViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73803ED327A3DE73008CF2BC /* WeatherViewInterface.swift */; };
 		73803ED627A3DE9D008CF2BC /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73803ED527A3DE9D008CF2BC /* WeatherViewModel.swift */; };
@@ -89,6 +88,7 @@
 		73803EDE27A3E579008CF2BC /* MockWeatherWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73803EDD27A3E579008CF2BC /* MockWeatherWireFrame.swift */; };
 		73803EE027A3E596008CF2BC /* MockWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73803EDF27A3E596008CF2BC /* MockWeatherViewModel.swift */; };
 		73803EE227A3E67D008CF2BC /* MockWeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73803EE127A3E67D008CF2BC /* MockWeatherPresenter.swift */; };
+		73929CDC27A82F4B00CE74B6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73929CDB27A82F4B00CE74B6 /* NetworkManager.swift */; };
 		73953F0827838AF0003480C6 /* ChannelsCellDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73953F0727838AF0003480C6 /* ChannelsCellDesign.swift */; };
 		7397B810277B409F00682178 /* MainWireFrameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7397B80F277B409F00682178 /* MainWireFrameTest.swift */; };
 		73C3D51527836511009BBC10 /* TestChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3D51427836511009BBC10 /* TestChannelsView.swift */; };
@@ -199,7 +199,6 @@
 		737B571427746315006B231E /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 		737B5717277465C0006B231E /* DownloadServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadServiceInterface.swift; sourceTree = "<group>"; };
 		73803EC027A3CE65008CF2BC /* HardRain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HardRain.sks; sourceTree = "<group>"; };
-		73803EC527A3D13D008CF2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../WeatherService/Assets.xcassets; sourceTree = "<group>"; };
 		73803ED127A3DDCA008CF2BC /* WeatherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInteractor.swift; sourceTree = "<group>"; };
 		73803ED327A3DE73008CF2BC /* WeatherViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewInterface.swift; sourceTree = "<group>"; };
 		73803ED527A3DE9D008CF2BC /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
@@ -209,6 +208,7 @@
 		73803EDD27A3E579008CF2BC /* MockWeatherWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherWireFrame.swift; sourceTree = "<group>"; };
 		73803EDF27A3E596008CF2BC /* MockWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherViewModel.swift; sourceTree = "<group>"; };
 		73803EE127A3E67D008CF2BC /* MockWeatherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherPresenter.swift; sourceTree = "<group>"; };
+		73929CDB27A82F4B00CE74B6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		73953F0727838AF0003480C6 /* ChannelsCellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsCellDesign.swift; sourceTree = "<group>"; };
 		7397B80F277B409F00682178 /* MainWireFrameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireFrameTest.swift; sourceTree = "<group>"; };
 		73C3D51427836511009BBC10 /* TestChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChannelsView.swift; sourceTree = "<group>"; };
@@ -294,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				73803ED027A3DD92008CF2BC /* WeatherConstants */,
+				73275F3027A158B300EB3F0D /* WeatherScene */,
 				73803ECA27A3DD23008CF2BC /* ViewModel */,
 				73803EC927A3DD1C008CF2BC /* View */,
 				73803ECC27A3DD36008CF2BC /* Interactor */,
@@ -308,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				73803ED927A3E3C4008CF2BC /* TestWeatherViewPresenter.swift */,
+				7357C76B27A449A60045CC83 /* TestWeatherModel.swift */,
 				733865F127A40BBF00B542D9 /* TestWeatherViewInteractor.swift */,
 				73803EDB27A3E56D008CF2BC /* MockWeatherInteractor.swift */,
 				73803EDD27A3E579008CF2BC /* MockWeatherWireFrame.swift */,
@@ -315,7 +317,6 @@
 				73803EE127A3E67D008CF2BC /* MockWeatherPresenter.swift */,
 				733865F327A40CE900B542D9 /* MockDownloadService.swift */,
 				733865F527A40F2100B542D9 /* MockCLLocationManager.swift */,
-				7357C76B27A449A60045CC83 /* TestWeatherModel.swift */,
 			);
 			path = WeatherService;
 			sourceTree = "<group>";
@@ -345,7 +346,6 @@
 			isa = PBXGroup;
 			children = (
 				73275F3B27A161CE00EB3F0D /* WeatherService */,
-				73275F3027A158B300EB3F0D /* WeatherScene */,
 				7302316027899D9900A00128 /* StorageHandler */,
 				73108D0F278069CD006D2C41 /* Extensions */,
 				736D647E27732A3400E61A9D /* MainModule */,
@@ -386,7 +386,6 @@
 				73F96F73278B297A008F027B /* CopyRightView.swift */,
 				736D643F27731F4F00E61A9D /* iTV-Plus-Info.plist */,
 				736D644027731F9F00E61A9D /* AppDelegate.swift */,
-				73803EC527A3D13D008CF2BC /* Assets.xcassets */,
 				736D641927731F0300E61A9D /* Assets.xcassets */,
 			);
 			path = Application;
@@ -485,6 +484,7 @@
 			children = (
 				737B571427746315006B231E /* DownloadService.swift */,
 				737B5716277465AC006B231E /* Interface */,
+				73929CDB27A82F4B00CE74B6 /* NetworkManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -1057,7 +1057,6 @@
 				73275F4427A18DEC00EB3F0D /* Snow.sks in Resources */,
 				73803EC127A3CE65008CF2BC /* HardRain.sks in Resources */,
 				736D641A27731F0300E61A9D /* Assets.xcassets in Resources */,
-				73803EC727A3D13D008CF2BC /* Assets.xcassets in Resources */,
 				73275F4627A18EAB00EB3F0D /* Stars.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1084,6 +1083,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73929CDC27A82F4B00CE74B6 /* NetworkManager.swift in Sources */,
 				7368D7C5278C34C100D3D44B /* ChannelsListView.swift in Sources */,
 				736D64DB277337EF00E61A9D /* ChannelsWireFrame.swift in Sources */,
 				7368D7C3278C346500D3D44B /* ChannelsIdentView.swift in Sources */,
@@ -1355,20 +1355,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"iTV Plus/Preview Content\"";
 				DEVELOPMENT_TEAM = UU5J2SPKHT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iTV-Plus-Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order to get your local weather data this app requires to get access to your location";
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.risinggalaxy.com.iTV-Plus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1383,20 +1382,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"iTV Plus/Preview Content\"";
 				DEVELOPMENT_TEAM = UU5J2SPKHT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iTV-Plus-Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order to get your local weather data this app requires to get access to your location";
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.risinggalaxy.com.iTV-Plus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

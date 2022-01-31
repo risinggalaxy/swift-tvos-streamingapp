@@ -30,7 +30,9 @@ class TestWeatherModel: XCTestCase {
         XCTAssertEqual(sut.temperature, kAllowedWeatherTest.temperature)
         XCTAssertEqual(sut.condition, kAllowedWeatherTest.condition)
         XCTAssertEqual(sut.description, kAllowedWeatherTest.description)
-        
+        XCTAssertEqual(sut.sunrise, kAllowedWeatherTest.sunrise)
+        XCTAssertEqual(sut.sunset, kAllowedWeatherTest.sunset)
+        XCTAssertEqual(sut.feelTemp, kAllowedWeatherTest.feelTemp)
     }
     
     

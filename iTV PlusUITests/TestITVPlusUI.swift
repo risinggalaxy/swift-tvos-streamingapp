@@ -18,17 +18,17 @@ class TestITVPlusUI: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         let elementsQuery = XCUIApplication().scrollViews.otherElements
-        let element = elementsQuery.buttons["⚽️, Sports"].children(matching: .other).element
-        XCTAssert(element.hasFocus)
-        XCUIRemote.shared.press(.select)
-        XCTAssert(elementsQuery.buttons["1, Sports One"].children(matching: .other).element.hasFocus)
-        XCUIRemote.shared.press(.select)
-        XCUIRemote.shared.press(.menu)
-        XCUIRemote.shared.press(.menu)
-        XCUIRemote.shared.press(.select, forDuration: 1.0)
+        let firstElement = elementsQuery.buttons["1-1"].children(matching: .other).element
+        XCTAssertTrue(firstElement.exists)
+        XCTAssertFalse(firstElement.textViews.firstMatch.exists)
+        XCTAssert(firstElement.hasFocus)
         XCUIRemote.shared.press(.select)
         XCUIRemote.shared.press(.menu)
-        
+        let firstChannel = elementsQuery.buttons["1-1"].children(matching: .other).element
+        XCTAssertTrue(firstChannel.exists)
+        XCTAssertFalse(firstChannel.textViews.firstMatch.exists)
+        XCUIRemote.shared.press(.select)
+        XCUIRemote.shared.press(.menu)
     }
 
 }

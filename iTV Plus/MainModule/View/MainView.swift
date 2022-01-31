@@ -14,23 +14,29 @@ struct MainView: View, MainViewInterface {
     @State var presenter: MainPresenterInterface?
     @StateObject var mainViewModel: MainViewModel
     
+    fileprivate func extractedErrorMessage() -> some View {
+        return Text(mainViewModel.errorMessage)
+            .font(.system(size: 30, weight: .bold, design: .default))
+    }
+    
     var body: some View {
         ZStack {
             WeatherViewWireframe.presentViewController()
                 .ignoresSafeArea()
             VStack {
                 Spacer()
-                    .padding(100)
+                    .padding(200)
                 if !mainViewModel.categories.isEmpty {
                     CategoryListView(categories: mainViewModel.categories, presenter: $presenter)
+                    if !mainViewModel.errorMessage.isEmpty {
+                        extractedErrorMessage()
+                    }
                 } else {
                     if mainViewModel.errorMessage.isEmpty {
                         Spacer()
                        ProgressIndicatorView()
                     } else {
-                        Spacer()
-                        Text(mainViewModel.errorMessage)
-                            .font(.system(size: 25, weight: .bold, design: .default))
+                        extractedErrorMessage()
                     }
                 }
                 Spacer()

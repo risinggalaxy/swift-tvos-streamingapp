@@ -9,5 +9,7 @@ import Combine
 import SwiftUI
 
 class MainEnvironmentalObject: ObservableObject {
+    
     let objectWillChange = ObservableObjectPublisher()
+    
 }

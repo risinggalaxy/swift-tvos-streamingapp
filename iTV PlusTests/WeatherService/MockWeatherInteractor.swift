@@ -10,7 +10,10 @@ import CoreLocation
 @testable import iTV_Plus
 
 class MockWeatherInteractor:
+                                
     WeatherViewInteractorInterface {
+    
+    var notificationCenter: NotificationCenter!
     
     var locationManager: CLLocationManager?
     
@@ -25,6 +28,10 @@ class MockWeatherInteractor:
     func fetchDataFromWeatherService() {
         presenterDidRequestRefreshingWeatherData = true
         numbersPresenterDidRequestRefreshingWeatherData += 1
+    }
+    
+    func shouldGetSunRiseAndSetData(data: Double) -> String {
+        return ""
     }
     
 }

@@ -12,14 +12,24 @@ import AppResources
 struct PlayerView: View, PlayerViewInterface {
     
     var presenter: PlayerPresenterInterface?
-    @ObservedObject var viewModel: PlayerViewModel
     var screen = UIScreen.main.bounds
+    @State var avPlayer: AVPlayer?
+    @State var didSetPlayer: Bool = false
+    @ObservedObject var viewModel: PlayerViewModel
     
     var body: some View {
         ZStack {
-            VideoPlayer(player: AVPlayer(url:try! channelUrl(from: playingChannel(viewModel.playingChannel).url)))
+            VideoPlayer(player: didSetPlayer ? avPlayer : nil)
                 .frame(width: screen.width, height: screen.height, alignment: .center)
+        }.onAppear {
+            shouldSetPlayer()
         }
+    }
+    
+    internal func shouldSetPlayer() {
+        avPlayer = AVPlayer(url:try! channelUrl(from: playingChannel(viewModel.playingChannel).url))
+        didSetPlayer = true
+        avPlayer!.play()
     }
     
     internal func playingChannel( _ channel: Channel?) throws -> Channel {
@@ -37,8 +47,8 @@ struct PlayerView: View, PlayerViewInterface {
     }
 }
 
-struct PlayerView_Previews: PreviewProvider {
-    static var previews: some View {
-        PlayerView(viewModel: PlayerViewModel())
-    }
-}
+//struct PlayerView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PlayerView(viewModel: PlayerViewModel())
+//    }
+//}

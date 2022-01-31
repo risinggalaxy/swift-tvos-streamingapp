@@ -21,6 +21,7 @@ struct CategoryListView: View {
                         presenter?.presentCategory(with: category)
                     } label: {
                         CategoryCellDesign(category: category)
+                            .accessibility(identifier: "\(category.id)")
                     }
                     .buttonStyle(CardButtonStyle())
                     .contextMenu {

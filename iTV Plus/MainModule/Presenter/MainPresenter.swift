@@ -8,11 +8,22 @@
 import Foundation
 import AppResources
 
+let kRefreshChannelsNotificationName = NSNotification.Name("UpdateChannels")
+
 class MainPresenter: MainPresenterInterface {
     
     weak var mainViewModel: MainViewModel?
     var interactor: MainInteractorInterface?
     var wireFrame: MainWireFrameInterface?
+    var notificationCenter: NotificationCenter!
+    var didHandleNotificationCall: Bool = false
+    
+    init(notificationCenter: NotificationCenter = .default) {
+        self.notificationCenter = notificationCenter
+        notificationCenter.addObserver(self, selector: #selector(refreshChannelData),
+                                       name: kRefreshChannelsNotificationName,
+                                       object: nil)
+    }
     
     func updateViewModel(_ categories: [ITVCategory]) {
         mainViewModel?.categories = categories
@@ -28,6 +39,13 @@ class MainPresenter: MainPresenterInterface {
     
     func presentCategory(with category: ITVCategory) {
         wireFrame?.presentCategory(with: category)
+    }
+    
+    @objc func refreshChannelData() {
+        mainViewModel?.categories.removeAll()
+        interactor?.startDownload()
+        didHandleNotificationCall = true
+        
     }
     
 }

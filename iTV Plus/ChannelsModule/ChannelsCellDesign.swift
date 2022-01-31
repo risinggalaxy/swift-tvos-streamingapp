@@ -30,7 +30,7 @@ struct ChannelsCellDesign: View {
                         Spacer()
                     }
                 })
-        }
+        }.accessibilityIdentifier("\(channel.id)")
     }
     
     internal func channel(color: String) -> Color {

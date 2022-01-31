@@ -45,5 +45,10 @@ class TestWeatherViewInteractor: XCTestCase {
         
     }
     
+    func testWeatherViewInteractor_WhenFetchSunDataFromWeatherService_ShouldReturnStringFromDoubleValue() {
+        let result = sut.shouldGetSunRiseAndSetData(data: 1643483839)
+        let stringValue: String = "8:17 PM"
+        XCTAssertEqual(result, stringValue)
+    }
     
 }

@@ -38,7 +38,8 @@ class TestWeatherViewPresenter: XCTestCase {
     }
     
     func testWeatherServicePresenter_WhenGettingData_ViewModelWeatherModelShouldNotBeNil() {
-        let weatherModel = WeatherModel(id: 500, location: "Amsterdam", temperature: 10.0, condition: "🌧", description: "Rainy")
+        let weatherModel = WeatherModel(id: 500, location: "Amsterdam", temperature: 10.0, condition: "🌧", description: "Rainy",
+                                        sunrise: "", sunset: "", feelTemp: 8.0)
         XCTAssertNil(mockWeatherViewModel.weatherModel)
         sut.passWeatherDataToView(model: weatherModel)
         XCTAssertNotNil(mockWeatherViewModel.weatherModel)
@@ -55,6 +56,15 @@ class TestWeatherViewPresenter: XCTestCase {
         XCTAssertTrue(mockInteractor.presenterDidRequestRefreshingWeatherData)
         XCTAssertEqual(mockInteractor.numbersPresenterDidRequestRefreshingWeatherData, 2)
     }
+    
+    func testtestWeatherServicePresenter_WhenNotificationSent_ShouldObserveNotification() {
+        let notification = NotificationCenter.default
+        sut = WeatherViewPresenter(notificationCenter: notification)
+        XCTAssertFalse(sut.didHandleRefreshNotification)
+        notification.post(name: kRefreshWeatherDataNotificationName, object: nil)
+        XCTAssertTrue(sut.didHandleRefreshNotification)
+    }
+    
     
     
 }

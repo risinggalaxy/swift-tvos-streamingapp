@@ -55,4 +55,22 @@ class MainPresenterTest: XCTestCase {
         XCTAssertTrue(mockWireframe.didReceiveCategory)
         XCTAssertTrue(mockWireframe.didCallPresentCategoryView)
     }
+    
+    func testMainPresenter_WhenPresenterRequestRefresh_ShouldCallStartDownloadOnInteractor() {
+        XCTAssertFalse(mockInteractor.didCallStartDownloadOnRefreshRequest)
+        XCTAssertEqual(mockInteractor.numbersDidCallStartDownloadOnRefreshRequest, 0)
+        sut.refreshChannelData()
+        XCTAssertTrue(mockInteractor.didCallStartDownloadOnRefreshRequest)
+        XCTAssertEqual(mockInteractor.numbersDidCallStartDownloadOnRefreshRequest, 1)
+    }
+    
+    func testMainPresenter_WhenRefreshNotificationPosted_ShouldCallRefreshChannelsdataFunction() {
+        XCTAssertFalse(sut.didHandleNotificationCall)
+        sut.notificationCenter = NotificationCenter.default
+        NotificationCenter.default.post(name: kRefreshChannelsNotificationName, object: nil)
+        XCTAssertTrue(sut.didHandleNotificationCall)
+    }
+    
+    
+    
 }
